@@ -1,0 +1,4 @@
+/blue/thai/quan.nguyen1/promptmia/train.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`
+  from tqdm._tqdm import trange
+[2026-03-27T17:15:58.358] error: *** JOB 28141790 ON c1000a-s25 CANCELLED AT 2026-03-27T17:15:58 DUE to SIGNAL Terminated ***

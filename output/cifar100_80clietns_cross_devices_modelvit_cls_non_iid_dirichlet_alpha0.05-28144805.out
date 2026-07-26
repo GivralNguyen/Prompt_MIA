@@ -1,0 +1,310 @@
+None
+L2P
+normal aggregation
+
+✅ Save init model
+
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_1 Server model: Eval_loss: 4.322469368102444; Accuracy: 0.1146
+
+✅ New last model saved to ./output_record/saved_model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.05_1_round_1_acc_0.1146.pt at round 1 with acc: 0.1146
+
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_2 Server model: Eval_loss: 4.038919098058324; Accuracy: 0.1649
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_3 Server model: Eval_loss: 3.7667237330394188; Accuracy: 0.1979
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_4 Server model: Eval_loss: 3.478642680842406; Accuracy: 0.2615
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_5 Server model: Eval_loss: 3.26348118265723; Accuracy: 0.2977
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_6 Server model: Eval_loss: 3.07238797625159; Accuracy: 0.3159
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_7 Server model: Eval_loss: 2.9376057606593817; Accuracy: 0.3668
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_8 Server model: Eval_loss: 2.8301729442207675; Accuracy: 0.3721
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_9 Server model: Eval_loss: 2.8044628535106684; Accuracy: 0.3423
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_10 Server model: Eval_loss: 2.7568338418462472; Accuracy: 0.3522
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_11 Server model: Eval_loss: 2.66354765861657; Accuracy: 0.4002
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_12 Server model: Eval_loss: 2.604167538843337; Accuracy: 0.4116
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_13 Server model: Eval_loss: 2.64074529204399; Accuracy: 0.3856
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_14 Server model: Eval_loss: 2.482221545687147; Accuracy: 0.452
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_15 Server model: Eval_loss: 2.3554169212936595; Accuracy: 0.5011
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_16 Server model: Eval_loss: 2.3072667524313473; Accuracy: 0.5128
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_17 Server model: Eval_loss: 2.328351733031546; Accuracy: 0.485
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_18 Server model: Eval_loss: 2.3310484969691867; Accuracy: 0.477
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_19 Server model: Eval_loss: 2.287503259197162; Accuracy: 0.4956
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_20 Server model: Eval_loss: 2.2599766823896177; Accuracy: 0.484
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_21 Server model: Eval_loss: 2.195840162076768; Accuracy: 0.5078
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_22 Server model: Eval_loss: 2.0972919866537594; Accuracy: 0.551
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_23 Server model: Eval_loss: 2.075145192207045; Accuracy: 0.5602
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_24 Server model: Eval_loss: 2.0671299141683397; Accuracy: 0.5568
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_25 Server model: Eval_loss: 2.0533585016894493; Accuracy: 0.5489
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_26 Server model: Eval_loss: 1.9833587848456802; Accuracy: 0.5746
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_27 Server model: Eval_loss: 2.0494043644826125; Accuracy: 0.5302
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_28 Server model: Eval_loss: 2.0213229420838084; Accuracy: 0.5379
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_29 Server model: Eval_loss: 1.9190310983900811; Accuracy: 0.5938
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_30 Server model: Eval_loss: 1.997405785663872; Accuracy: 0.545
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_31 Server model: Eval_loss: 1.9440133245127975; Accuracy: 0.5677
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_32 Server model: Eval_loss: 2.0051039897712175; Accuracy: 0.5414
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_33 Server model: Eval_loss: 1.9097718554697218; Accuracy: 0.5716
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_34 Server model: Eval_loss: 1.8544823607062078; Accuracy: 0.5922
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_35 Server model: Eval_loss: 1.8710189184565453; Accuracy: 0.5821
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_36 Server model: Eval_loss: 1.7928137741271097; Accuracy: 0.6212
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_37 Server model: Eval_loss: 1.7900137870934358; Accuracy: 0.6062
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_38 Server model: Eval_loss: 1.8358393649386753; Accuracy: 0.584
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_39 Server model: Eval_loss: 1.7602540155884567; Accuracy: 0.6271
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_40 Server model: Eval_loss: 1.78973597098308; Accuracy: 0.6092
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_41 Server model: Eval_loss: 1.736426132499792; Accuracy: 0.6256
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_42 Server model: Eval_loss: 1.6894947282827584; Accuracy: 0.6532
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_43 Server model: Eval_loss: 1.740237907239586; Accuracy: 0.6177
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_44 Server model: Eval_loss: 1.7126864270799478; Accuracy: 0.6282
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_45 Server model: Eval_loss: 1.7290951476734915; Accuracy: 0.6216
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_46 Server model: Eval_loss: 1.756294898166778; Accuracy: 0.6029
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_47 Server model: Eval_loss: 1.6544273514656505; Accuracy: 0.6443
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_48 Server model: Eval_loss: 1.7015438284843591; Accuracy: 0.6252
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_49 Server model: Eval_loss: 1.7305760451942493; Accuracy: 0.6049
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_50 Server model: Eval_loss: 1.7557928630500843; Accuracy: 0.5943
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_51 Server model: Eval_loss: 1.6623318947044907; Accuracy: 0.6292
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_52 Server model: Eval_loss: 1.6425661076406004; Accuracy: 0.644
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_53 Server model: Eval_loss: 1.6743313195599112; Accuracy: 0.6263
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_54 Server model: Eval_loss: 1.668437951689313; Accuracy: 0.6269
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_55 Server model: Eval_loss: 1.6346109422149173; Accuracy: 0.6411
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_56 Server model: Eval_loss: 1.585073882607138; Accuracy: 0.6618
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_57 Server model: Eval_loss: 1.6877095038723793; Accuracy: 0.6193
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_58 Server model: Eval_loss: 1.6380519289879283; Accuracy: 0.6358
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_59 Server model: Eval_loss: 1.6148806202943158; Accuracy: 0.6452
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_60 Server model: Eval_loss: 1.6647303119586532; Accuracy: 0.6385
+*****Final accuracy with minimal eval_loss: 0.6618*****

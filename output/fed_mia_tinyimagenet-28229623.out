@@ -1,0 +1,462 @@
+None
+
+[MIA] Target client: 0  Members: 1247  Non-members: 10000
+
+L2P
+normal aggregation
+  [MIA] Round 1: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_1 Server model: Eval_loss: 4.572777079928453; Accuracy: 0.2574
+  [MIA] Round 2: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_2 Server model: Eval_loss: 3.833610940131412; Accuracy: 0.3806
+  [MIA] Round 3: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_3 Server model: Eval_loss: 3.273355502231865; Accuracy: 0.4749
+  [MIA] Round 4: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_4 Server model: Eval_loss: 2.859053862322668; Accuracy: 0.5483
+  [MIA] Round 5: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_5 Server model: Eval_loss: 2.519735770620358; Accuracy: 0.6039
+  [MIA] Round 6: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_6 Server model: Eval_loss: 2.261676236322731; Accuracy: 0.6378
+  [MIA] Round 7: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_7 Server model: Eval_loss: 2.051915835423075; Accuracy: 0.6644
+  [MIA] Round 8: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_8 Server model: Eval_loss: 1.8508204563408142; Accuracy: 0.6849
+  [MIA] Round 9: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_9 Server model: Eval_loss: 1.689991054261566; Accuracy: 0.7046
+  [MIA] Round 10: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_10 Server model: Eval_loss: 1.5703060801621456; Accuracy: 0.7145
+  [MIA] Round 11: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_11 Server model: Eval_loss: 1.4576671966321908; Accuracy: 0.7316
+  [MIA] Round 12: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_12 Server model: Eval_loss: 1.3744625840217444; Accuracy: 0.7409
+  [MIA] Round 13: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_13 Server model: Eval_loss: 1.2906062272703571; Accuracy: 0.75
+  [MIA] Round 14: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_14 Server model: Eval_loss: 1.2283347146526264; Accuracy: 0.754
+  [MIA] Round 15: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_15 Server model: Eval_loss: 1.1867474089762209; Accuracy: 0.7593
+  [MIA] Round 16: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_16 Server model: Eval_loss: 1.1363466564257434; Accuracy: 0.7677
+  [MIA] Round 17: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_17 Server model: Eval_loss: 1.091747525011658; Accuracy: 0.7753
+  [MIA] Round 18: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_18 Server model: Eval_loss: 1.0576020281785612; Accuracy: 0.7807
+  [MIA] Round 19: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_19 Server model: Eval_loss: 1.0262050685609223; Accuracy: 0.7862
+  [MIA] Round 20: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_20 Server model: Eval_loss: 1.0008972583303026; Accuracy: 0.7877
+  [MIA] Round 21: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_21 Server model: Eval_loss: 0.9810885513664052; Accuracy: 0.7845
+  [MIA] Round 22: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_22 Server model: Eval_loss: 0.9527267604876476; Accuracy: 0.7907
+  [MIA] Round 23: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_23 Server model: Eval_loss: 0.9342031355496425; Accuracy: 0.799
+  [MIA] Round 24: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_24 Server model: Eval_loss: 0.9131268769692463; Accuracy: 0.8
+  [MIA] Round 25: target selected (local_idx=0), 9 shadow clients recorded
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_25 Server model: Eval_loss: 0.8972145318984985; Accuracy: 0.8031
+  [MIA] Round 26: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_26 Server model: Eval_loss: 0.8806417216161254; Accuracy: 0.8075
+  [MIA] Round 27: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_27 Server model: Eval_loss: 0.8741149181013654; Accuracy: 0.8064
+  [MIA] Round 28: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_28 Server model: Eval_loss: 0.8493131864222752; Accuracy: 0.8129
+  [MIA] Round 29: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_29 Server model: Eval_loss: 0.8351693495064024; Accuracy: 0.8175
+  [MIA] Round 30: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_30 Server model: Eval_loss: 0.8232969970080504; Accuracy: 0.8149
+  [MIA] Round 31: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_31 Server model: Eval_loss: 0.8035017753102977; Accuracy: 0.8186
+  [MIA] Round 32: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_32 Server model: Eval_loss: 0.7937011735834134; Accuracy: 0.8223
+  [MIA] Round 33: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_33 Server model: Eval_loss: 0.7854946115214354; Accuracy: 0.8233
+  [MIA] Round 34: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_34 Server model: Eval_loss: 0.7741955564280224; Accuracy: 0.8254
+  [MIA] Round 35: target selected (local_idx=0), 9 shadow clients recorded
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_35 Server model: Eval_loss: 0.7706557111755298; Accuracy: 0.8222
+  [MIA] Round 36: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_36 Server model: Eval_loss: 0.7619685549644908; Accuracy: 0.825
+  [MIA] Round 37: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_37 Server model: Eval_loss: 0.7556065041927775; Accuracy: 0.825
+  [MIA] Round 38: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_38 Server model: Eval_loss: 0.7441440589109044; Accuracy: 0.8294
+  [MIA] Round 39: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_39 Server model: Eval_loss: 0.7378749465866453; Accuracy: 0.831
+  [MIA] Round 40: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_40 Server model: Eval_loss: 0.7324100628400304; Accuracy: 0.8319
+  [MIA] Round 41: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_41 Server model: Eval_loss: 0.7316165541767314; Accuracy: 0.8309
+  [MIA] Round 42: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_42 Server model: Eval_loss: 0.7194553581392689; Accuracy: 0.8353
+  [MIA] Round 43: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_43 Server model: Eval_loss: 0.7166548443448012; Accuracy: 0.8347
+  [MIA] Round 44: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_44 Server model: Eval_loss: 0.7103236976322854; Accuracy: 0.8368
+  [MIA] Round 45: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_45 Server model: Eval_loss: 0.7078132990059579; Accuracy: 0.8373
+  [MIA] Round 46: target selected (local_idx=0), 9 shadow clients recorded
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_46 Server model: Eval_loss: 0.7047737624235214; Accuracy: 0.835
+  [MIA] Round 47: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_47 Server model: Eval_loss: 0.7038890411899348; Accuracy: 0.8354
+  [MIA] Round 48: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_48 Server model: Eval_loss: 0.6970661172441616; Accuracy: 0.8394
+  [MIA] Round 49: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_49 Server model: Eval_loss: 0.695869839305331; Accuracy: 0.8398
+  [MIA] Round 50: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_50 Server model: Eval_loss: 0.6901888847351074; Accuracy: 0.8398
+  [MIA] Round 51: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_51 Server model: Eval_loss: 0.6796439109714167; Accuracy: 0.8425
+  [MIA] Round 52: target selected (local_idx=0), 9 shadow clients recorded
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_52 Server model: Eval_loss: 0.6802588667079901; Accuracy: 0.8418
+  [MIA] Round 53: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_53 Server model: Eval_loss: 0.6828189002480477; Accuracy: 0.8402
+  [MIA] Round 54: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_54 Server model: Eval_loss: 0.6782811006922631; Accuracy: 0.8418
+  [MIA] Round 55: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_55 Server model: Eval_loss: 0.6740460352153536; Accuracy: 0.8435
+  [MIA] Round 56: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_56 Server model: Eval_loss: 0.6714903922976961; Accuracy: 0.8438
+  [MIA] Round 57: target selected (local_idx=0), 9 shadow clients recorded
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_57 Server model: Eval_loss: 0.6690552477624007; Accuracy: 0.8433
+  [MIA] Round 58: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_58 Server model: Eval_loss: 0.6659161841413778; Accuracy: 0.8435
+  [MIA] Round 59: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_59 Server model: Eval_loss: 0.6668963682879309; Accuracy: 0.8451
+  [MIA] Round 60: target NOT selected, skipping FedMIA-I for this round
+
+new_prompt.shape torch.Size([20, 768])
+new_key.shape torch.Size([20, 768])
+Server Prompt Pool Size: torch.Size([20, 768])
+Comm_round_60 Server model: Eval_loss: 0.6629814368904017; Accuracy: 0.8456
+
+############################################################
+  LOSS-BASED MIA ATTACKS  (60 recorded rounds)
+  FedMIA-I available rounds: 5
+############################################################
+
+============================================================
+  Blackbox-Loss (single round)
+============================================================
+  AUC:              0.5022
+  TPR@FPR= 0.010:  0.0096
+  TPR@FPR= 0.100:  0.0914
+  TPR@FPR= 0.200:  0.1909
+  TPR@FPR= 0.300:  0.2943
+  TPR@FPR= 0.400:  0.3841
+  TPR@FPR= 0.500:  0.4860
+  TPR@FPR= 0.600:  0.6047
+  TPR@FPR= 0.700:  0.7145
+  TPR@FPR= 0.800:  0.8292
+  TPR@FPR= 0.900:  0.9198
+  TPR@FPR= 1.000:  1.0000
+  TPR@FPR= 0.001:  0.0016
+  TPR@FPR= 0.000:  0.0008
+  FPR@TPR= 1.000:  0.9985
+============================================================
+
+============================================================
+  Loss-Series (multi-round average)
+============================================================
+  AUC:              0.5055
+  TPR@FPR= 0.010:  0.0072
+  TPR@FPR= 0.100:  0.0906
+  TPR@FPR= 0.200:  0.1885
+  TPR@FPR= 0.300:  0.3039
+  TPR@FPR= 0.400:  0.3986
+  TPR@FPR= 0.500:  0.5044
+  TPR@FPR= 0.600:  0.6111
+  TPR@FPR= 0.700:  0.7225
+  TPR@FPR= 0.800:  0.8148
+  TPR@FPR= 0.900:  0.9118
+  TPR@FPR= 1.000:  0.9992
+  TPR@FPR= 0.001:  0.0000
+  TPR@FPR= 0.000:  0.0000
+  FPR@TPR= 1.000:  1.0000
+============================================================
+
+============================================================
+  FedMIA-I (CDF + temporal avg, 5 rounds)
+============================================================
+  AUC:              0.8436
+  TPR@FPR= 0.010:  0.1163
+  TPR@FPR= 0.100:  0.4611
+  TPR@FPR= 0.200:  0.7049
+  TPR@FPR= 0.300:  0.8444
+  TPR@FPR= 0.400:  0.9166
+  TPR@FPR= 0.500:  0.9543
+  TPR@FPR= 0.600:  0.9832
+  TPR@FPR= 0.700:  0.9944
+  TPR@FPR= 0.800:  0.9992
+  TPR@FPR= 0.900:  1.0000
+  TPR@FPR= 1.000:  1.0000
+  TPR@FPR= 0.001:  0.0313
+  TPR@FPR= 0.000:  0.0104
+  FPR@TPR= 1.000:  0.8671
+============================================================
+
+============================================================
+  FedMIA-I best single round (round 25)
+============================================================
+  AUC:              0.8319
+  TPR@FPR= 0.010:  0.0874
+  TPR@FPR= 0.100:  0.4026
+  TPR@FPR= 0.200:  0.6664
+  TPR@FPR= 0.300:  0.8364
+  TPR@FPR= 0.400:  0.9086
+  TPR@FPR= 0.500:  0.9615
+  TPR@FPR= 0.600:  0.9832
+  TPR@FPR= 0.700:  0.9960
+  TPR@FPR= 0.800:  0.9984
+  TPR@FPR= 0.900:  1.0000
+  TPR@FPR= 1.000:  1.0000
+  TPR@FPR= 0.001:  0.0176
+  TPR@FPR= 0.000:  0.0048
+  FPR@TPR= 1.000:  0.8579
+============================================================
+
+Results saved to ./output_record/mia_loss_based/mia_results_tinyimagenet_80clients_alpha0.5_defnone_ptb0p0_spr0p0_aug0_sprop1p0_dsprop1p0_target0.json
+
+================================================================================================================================================================
+  Attack                                   AUC  TPR@0.010  TPR@0.100  TPR@0.200  TPR@0.300  TPR@0.400  TPR@0.500  TPR@0.600  TPR@0.700  TPR@0.800  TPR@0.900  TPR@1.000  TPR@0.001  TPR@0.000  FPR@TPR=1
+  ----------------------------------- --------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------  ---------
+  Blackbox-Loss                         0.5022     0.0096     0.0914     0.1909     0.2943     0.3841     0.4860     0.6047     0.7145     0.8292     0.9198     1.0000     0.0016     0.0008     0.9985
+  Loss-Series                           0.5055     0.0072     0.0906     0.1885     0.3039     0.3986     0.5044     0.6111     0.7225     0.8148     0.9118     0.9992     0.0000     0.0000     1.0000
+  FedMIA-I                              0.8436     0.1163     0.4611     0.7049     0.8444     0.9166     0.9543     0.9832     0.9944     0.9992     1.0000     1.0000     0.0313     0.0104     0.8671
+  FedMIA-I (best single round)          0.8319     0.0874     0.4026     0.6664     0.8364     0.9086     0.9615     0.9832     0.9960     0.9984     1.0000     1.0000     0.0176     0.0048     0.8579
+================================================================================================================================================================

@@ -1,0 +1,1047 @@
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 1 --beta 0 --query_model_type vit_cls  --load_model /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_spr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.9432.pt
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`_1_defspar
+  from tqdm._tqdm import trangerop1p0_csuniform_round_60_ac
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+None
+L2P
+normal aggregation
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_spr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.9432.pt
+
+=============== MIA Attack Loop 1 ===============
+================= MIA with batch size 1 =================
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 111 MIA Negative: 9889 Attack Accuracy:) 99.44499999995055 %
+TPR: 100.00%, TNR: 98.89%, Advantage: 98.89%
+TP: 0, FP: 111, FN: 0, TN: 9889
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 250 MIA Negative: 9750 Attack Accuracy:) 98.74999999995124 %
+TPR: 100.00%, TNR: 97.50%, Advantage: 97.50%
+TP: 0, FP: 250, FN: 0, TN: 9750
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 416 MIA Negative: 9584 Attack Accuracy:) 97.91999999995208 %
+TPR: 100.00%, TNR: 95.84%, Advantage: 95.84%
+TP: 0, FP: 416, FN: 0, TN: 9584
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 817 MIA Negative: 9183 Attack Accuracy:) 95.91499999995408 %
+TPR: 100.00%, TNR: 91.83%, Advantage: 91.83%
+TP: 0, FP: 817, FN: 0, TN: 9183
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 1340 MIA Negative: 8660 Attack Accuracy:) 93.2999999999567 %
+TPR: 100.00%, TNR: 86.60%, Advantage: 86.60%
+TP: 0, FP: 1340, FN: 0, TN: 8660
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 1911 MIA Negative: 8089 Attack Accuracy:) 90.44499999995955 %
+TPR: 100.00%, TNR: 80.89%, Advantage: 80.89%
+TP: 0, FP: 1911, FN: 0, TN: 8089
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 2673 MIA Negative: 7327 Attack Accuracy:) 86.63499999996336 %
+TPR: 100.00%, TNR: 73.27%, Advantage: 73.27%
+TP: 0, FP: 2673, FN: 0, TN: 7327
+=============== MIA Attack Loop 2 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 2 MIA Negative: 9998 Attack Accuracy:) 99.98999999995 %
+TPR: 100.00%, TNR: 99.98%, Advantage: 99.98%
+TP: 0, FP: 2, FN: 0, TN: 9998
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 94 MIA Negative: 9906 Attack Accuracy:) 99.52999999995046 %
+TPR: 100.00%, TNR: 99.06%, Advantage: 99.06%
+TP: 0, FP: 94, FN: 0, TN: 9906
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 258 MIA Negative: 9742 Attack Accuracy:) 98.7099999999513 %
+TPR: 100.00%, TNR: 97.42%, Advantage: 97.42%
+TP: 0, FP: 258, FN: 0, TN: 9742
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 458 MIA Negative: 9542 Attack Accuracy:) 97.70999999995229 %
+TPR: 100.00%, TNR: 95.42%, Advantage: 95.42%
+TP: 0, FP: 458, FN: 0, TN: 9542
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 825 MIA Negative: 9175 Attack Accuracy:) 95.87499999995413 %
+TPR: 100.00%, TNR: 91.75%, Advantage: 91.75%
+TP: 0, FP: 825, FN: 0, TN: 9175
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 1346 MIA Negative: 8654 Attack Accuracy:) 93.26999999995674 %
+TPR: 100.00%, TNR: 86.54%, Advantage: 86.54%
+TP: 0, FP: 1346, FN: 0, TN: 8654
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 1958 MIA Negative: 8042 Attack Accuracy:) 90.20999999995979 %
+TPR: 100.00%, TNR: 80.42%, Advantage: 80.42%
+TP: 0, FP: 1958, FN: 0, TN: 8042
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 2571 MIA Negative: 7429 Attack Accuracy:) 87.14499999996286 %
+TPR: 100.00%, TNR: 74.29%, Advantage: 74.29%
+TP: 0, FP: 2571, FN: 0, TN: 7429
+=============== MIA Attack Loop 3 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 117 MIA Negative: 9883 Attack Accuracy:) 99.41499999995058 %
+TPR: 100.00%, TNR: 98.83%, Advantage: 98.83%
+TP: 0, FP: 117, FN: 0, TN: 9883
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 262 MIA Negative: 9738 Attack Accuracy:) 98.68999999995131 %
+TPR: 100.00%, TNR: 97.38%, Advantage: 97.38%
+TP: 0, FP: 262, FN: 0, TN: 9738
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 474 MIA Negative: 9526 Attack Accuracy:) 97.62999999995236 %
+TPR: 100.00%, TNR: 95.26%, Advantage: 95.26%
+TP: 0, FP: 474, FN: 0, TN: 9526
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 817 MIA Negative: 9183 Attack Accuracy:) 95.91499999995408 %
+TPR: 100.00%, TNR: 91.83%, Advantage: 91.83%
+TP: 0, FP: 817, FN: 0, TN: 9183
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 1188 MIA Negative: 8812 Attack Accuracy:) 94.05999999995593 %
+TPR: 100.00%, TNR: 88.12%, Advantage: 88.12%
+TP: 0, FP: 1188, FN: 0, TN: 8812
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 1836 MIA Negative: 8164 Attack Accuracy:) 90.81999999995918 %
+TPR: 100.00%, TNR: 81.64%, Advantage: 81.64%
+TP: 0, FP: 1836, FN: 0, TN: 8164
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 2485 MIA Negative: 7515 Attack Accuracy:) 87.57499999996242 %
+TPR: 100.00%, TNR: 75.15%, Advantage: 75.15%
+TP: 0, FP: 2485, FN: 0, TN: 7515
+=============== MIA Attack Loop 4 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 2 MIA Negative: 9998 Attack Accuracy:) 99.98999999995 %
+TPR: 100.00%, TNR: 99.98%, Advantage: 99.98%
+TP: 0, FP: 2, FN: 0, TN: 9998
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 135 MIA Negative: 9865 Attack Accuracy:) 99.32499999995066 %
+TPR: 100.00%, TNR: 98.65%, Advantage: 98.65%
+TP: 0, FP: 135, FN: 0, TN: 9865
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 238 MIA Negative: 9762 Attack Accuracy:) 98.80999999995119 %
+TPR: 100.00%, TNR: 97.62%, Advantage: 97.62%
+TP: 0, FP: 238, FN: 0, TN: 9762
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 435 MIA Negative: 9565 Attack Accuracy:) 97.82499999995218 %
+TPR: 100.00%, TNR: 95.65%, Advantage: 95.65%
+TP: 0, FP: 435, FN: 0, TN: 9565
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 829 MIA Negative: 9171 Attack Accuracy:) 95.85499999995415 %
+TPR: 100.00%, TNR: 91.71%, Advantage: 91.71%
+TP: 0, FP: 829, FN: 0, TN: 9171
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 1333 MIA Negative: 8667 Attack Accuracy:) 93.33499999995666 %
+TPR: 100.00%, TNR: 86.67%, Advantage: 86.67%
+TP: 0, FP: 1333, FN: 0, TN: 8667
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 1849 MIA Negative: 8151 Attack Accuracy:) 90.75499999995924 %
+TPR: 100.00%, TNR: 81.51%, Advantage: 81.51%
+TP: 0, FP: 1849, FN: 0, TN: 8151
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 2504 MIA Negative: 7496 Attack Accuracy:) 87.47999999996252 %
+TPR: 100.00%, TNR: 74.96%, Advantage: 74.96%
+TP: 0, FP: 2504, FN: 0, TN: 7496
+
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 0 --beta 0 --query_model_type vit_cls  --load_model /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defmix_up_mix0p2_spr0p0_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.9392.pt
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`
+  from tqdm._tqdm import trangeix_up_mix0p2
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+None
+L2P
+normal aggregation
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defmix_up_mix0p2_spr0p0_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.9392.pt
+
+=============== MIA Attack Loop 1 ===============
+================= MIA with batch size 1 =================
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 10 MIA Negative: 9990 Attack Accuracy:) 99.94999999995005 %
+TPR: 100.00%, TNR: 99.90%, Advantage: 99.90%
+TP: 0, FP: 10, FN: 0, TN: 9990
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 26 MIA Negative: 9974 Attack Accuracy:) 99.86999999995012 %
+TPR: 100.00%, TNR: 99.74%, Advantage: 99.74%
+TP: 0, FP: 26, FN: 0, TN: 9974
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 55 MIA Negative: 9945 Attack Accuracy:) 99.72499999995027 %
+TPR: 100.00%, TNR: 99.45%, Advantage: 99.45%
+TP: 0, FP: 55, FN: 0, TN: 9945
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 139 MIA Negative: 9861 Attack Accuracy:) 99.30499999995068 %
+TPR: 100.00%, TNR: 98.61%, Advantage: 98.61%
+TP: 0, FP: 139, FN: 0, TN: 9861
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 271 MIA Negative: 9729 Attack Accuracy:) 98.64499999995135 %
+TPR: 100.00%, TNR: 97.29%, Advantage: 97.29%
+TP: 0, FP: 271, FN: 0, TN: 9729
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 431 MIA Negative: 9569 Attack Accuracy:) 97.84499999995215 %
+TPR: 100.00%, TNR: 95.69%, Advantage: 95.69%
+TP: 0, FP: 431, FN: 0, TN: 9569
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 759 MIA Negative: 9241 Attack Accuracy:) 96.20499999995378 %
+TPR: 100.00%, TNR: 92.41%, Advantage: 92.41%
+TP: 0, FP: 759, FN: 0, TN: 9241
+=============== MIA Attack Loop 2 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 9 MIA Negative: 9991 Attack Accuracy:) 99.95499999995003 %
+TPR: 100.00%, TNR: 99.91%, Advantage: 99.91%
+TP: 0, FP: 9, FN: 0, TN: 9991
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 23 MIA Negative: 9977 Attack Accuracy:) 99.88499999995011 %
+TPR: 100.00%, TNR: 99.77%, Advantage: 99.77%
+TP: 0, FP: 23, FN: 0, TN: 9977
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 69 MIA Negative: 9931 Attack Accuracy:) 99.65499999995033 %
+TPR: 100.00%, TNR: 99.31%, Advantage: 99.31%
+TP: 0, FP: 69, FN: 0, TN: 9931
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 116 MIA Negative: 9884 Attack Accuracy:) 99.41999999995058 %
+TPR: 100.00%, TNR: 98.84%, Advantage: 98.84%
+TP: 0, FP: 116, FN: 0, TN: 9884
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 236 MIA Negative: 9764 Attack Accuracy:) 98.81999999995116 %
+TPR: 100.00%, TNR: 97.64%, Advantage: 97.64%
+TP: 0, FP: 236, FN: 0, TN: 9764
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 471 MIA Negative: 9529 Attack Accuracy:) 97.64499999995235 %
+TPR: 100.00%, TNR: 95.29%, Advantage: 95.29%
+TP: 0, FP: 471, FN: 0, TN: 9529
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 681 MIA Negative: 9319 Attack Accuracy:) 96.5949999999534 %
+TPR: 100.00%, TNR: 93.19%, Advantage: 93.19%
+TP: 0, FP: 681, FN: 0, TN: 9319
+=============== MIA Attack Loop 3 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 22 MIA Negative: 9978 Attack Accuracy:) 99.8899999999501 %
+TPR: 100.00%, TNR: 99.78%, Advantage: 99.78%
+TP: 0, FP: 22, FN: 0, TN: 9978
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 37 MIA Negative: 9963 Attack Accuracy:) 99.81499999995019 %
+TPR: 100.00%, TNR: 99.63%, Advantage: 99.63%
+TP: 0, FP: 37, FN: 0, TN: 9963
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 72 MIA Negative: 9928 Attack Accuracy:) 99.63999999995036 %
+TPR: 100.00%, TNR: 99.28%, Advantage: 99.28%
+TP: 0, FP: 72, FN: 0, TN: 9928
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 130 MIA Negative: 9870 Attack Accuracy:) 99.34999999995064 %
+TPR: 100.00%, TNR: 98.70%, Advantage: 98.70%
+TP: 0, FP: 130, FN: 0, TN: 9870
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 214 MIA Negative: 9786 Attack Accuracy:) 98.92999999995106 %
+TPR: 100.00%, TNR: 97.86%, Advantage: 97.86%
+TP: 0, FP: 214, FN: 0, TN: 9786
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 427 MIA Negative: 9573 Attack Accuracy:) 97.86499999995213 %
+TPR: 100.00%, TNR: 95.73%, Advantage: 95.73%
+TP: 0, FP: 427, FN: 0, TN: 9573
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 689 MIA Negative: 9311 Attack Accuracy:) 96.55499999995344 %
+TPR: 100.00%, TNR: 93.11%, Advantage: 93.11%
+TP: 0, FP: 689, FN: 0, TN: 9311
+=============== MIA Attack Loop 4 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 16 MIA Negative: 9984 Attack Accuracy:) 99.91999999995006 %
+TPR: 100.00%, TNR: 99.84%, Advantage: 99.84%
+TP: 0, FP: 16, FN: 0, TN: 9984
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 41 MIA Negative: 9959 Attack Accuracy:) 99.7949999999502 %
+TPR: 100.00%, TNR: 99.59%, Advantage: 99.59%
+TP: 0, FP: 41, FN: 0, TN: 9959
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 55 MIA Negative: 9945 Attack Accuracy:) 99.72499999995027 %
+TPR: 100.00%, TNR: 99.45%, Advantage: 99.45%
+TP: 0, FP: 55, FN: 0, TN: 9945
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 119 MIA Negative: 9881 Attack Accuracy:) 99.40499999995058 %
+TPR: 100.00%, TNR: 98.81%, Advantage: 98.81%
+TP: 0, FP: 119, FN: 0, TN: 9881
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 257 MIA Negative: 9743 Attack Accuracy:) 98.71499999995127 %
+TPR: 100.00%, TNR: 97.43%, Advantage: 97.43%
+TP: 0, FP: 257, FN: 0, TN: 9743
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 460 MIA Negative: 9540 Attack Accuracy:) 97.6999999999523 %
+TPR: 100.00%, TNR: 95.40%, Advantage: 95.40%
+TP: 0, FP: 460, FN: 0, TN: 9540
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 704 MIA Negative: 9296 Attack Accuracy:) 96.47999999995352 %
+TPR: 100.00%, TNR: 92.96%, Advantage: 92.96%
+TP: 0, FP: 704, FN: 0, TN: 9296
+=============== MIA Attack Loop 5 ===============
+================= MIA with batch size 1 =================
+^CTraceback (most recent call last):
+  File "/home/quannm/code/icml_promptmia/mia_stealth.py", line 431, in <module>
+    for batch_idx, (x, label) in enumerate(dataloader): #iterates through every single data point (x) from both the training and test sets. For each one, it tries to predict if it's a "member" or not.
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 790, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 398, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 211, in collate
+    return [
+           ^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 212, in <listcomp>
+    collate(samples, collate_fn_map=collate_fn_map)
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 155, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 272, in collate_tensor_fn
+    return torch.stack(batch, 0, out=out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+(tum2) quannm@Suramar:~/code/icml_promptmia$  python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 0 --beta 0 --query_model_type vit_cls  --load_model /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80cl
+ietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defnone_mix0p2_spr0p0_ptb0p0_aug1_sprop1p0_csuniform_round_60_acc_0.9393.pt
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`
+  from tqdm._tqdm import trange
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+None
+L2P
+normal aggregation
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defnone_mix0p2_spr0p0_ptb0p0_aug1_sprop1p0_csuniform_round_60_acc_0.9393.pt
+
+=============== MIA Attack Loop 1 ===============
+================= MIA with batch size 1 =================
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 14 MIA Negative: 9986 Attack Accuracy:) 99.92999999995007 %
+TPR: 100.00%, TNR: 99.86%, Advantage: 99.86%
+TP: 0, FP: 14, FN: 0, TN: 9986
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 35 MIA Negative: 9965 Attack Accuracy:) 99.82499999995017 %
+TPR: 100.00%, TNR: 99.65%, Advantage: 99.65%
+TP: 0, FP: 35, FN: 0, TN: 9965
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 100 MIA Negative: 9900 Attack Accuracy:) 99.49999999995049 %
+TPR: 100.00%, TNR: 99.00%, Advantage: 99.00%
+TP: 0, FP: 100, FN: 0, TN: 9900
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 144 MIA Negative: 9856 Attack Accuracy:) 99.27999999995072 %
+TPR: 100.00%, TNR: 98.56%, Advantage: 98.56%
+TP: 0, FP: 144, FN: 0, TN: 9856
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 275 MIA Negative: 9725 Attack Accuracy:) 98.62499999995138 %
+TPR: 100.00%, TNR: 97.25%, Advantage: 97.25%
+TP: 0, FP: 275, FN: 0, TN: 9725
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 492 MIA Negative: 9508 Attack Accuracy:) 97.53999999995246 %
+TPR: 100.00%, TNR: 95.08%, Advantage: 95.08%
+TP: 0, FP: 492, FN: 0, TN: 9508
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 836 MIA Negative: 9164 Attack Accuracy:) 95.81999999995418 %
+TPR: 100.00%, TNR: 91.64%, Advantage: 91.64%
+TP: 0, FP: 836, FN: 0, TN: 9164
+=============== MIA Attack Loop 2 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 10 MIA Negative: 9990 Attack Accuracy:) 99.94999999995005 %
+TPR: 100.00%, TNR: 99.90%, Advantage: 99.90%
+TP: 0, FP: 10, FN: 0, TN: 9990
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 40 MIA Negative: 9960 Attack Accuracy:) 99.79999999995019 %
+TPR: 100.00%, TNR: 99.60%, Advantage: 99.60%
+TP: 0, FP: 40, FN: 0, TN: 9960
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 71 MIA Negative: 9929 Attack Accuracy:) 99.64499999995036 %
+TPR: 100.00%, TNR: 99.29%, Advantage: 99.29%
+TP: 0, FP: 71, FN: 0, TN: 9929
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 149 MIA Negative: 9851 Attack Accuracy:) 99.25499999995074 %
+TPR: 100.00%, TNR: 98.51%, Advantage: 98.51%
+TP: 0, FP: 149, FN: 0, TN: 9851
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 236 MIA Negative: 9764 Attack Accuracy:) 98.81999999995116 %
+TPR: 100.00%, TNR: 97.64%, Advantage: 97.64%
+TP: 0, FP: 236, FN: 0, TN: 9764
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 488 MIA Negative: 9512 Attack Accuracy:) 97.55999999995244 %
+TPR: 100.00%, TNR: 95.12%, Advantage: 95.12%
+TP: 0, FP: 488, FN: 0, TN: 9512
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 816 MIA Negative: 9184 Attack Accuracy:) 95.91999999995407 %
+TPR: 100.00%, TNR: 91.84%, Advantage: 91.84%
+TP: 0, FP: 816, FN: 0, TN: 9184
+=============== MIA Attack Loop 3 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 22 MIA Negative: 9978 Attack Accuracy:) 99.8899999999501 %
+TPR: 100.00%, TNR: 99.78%, Advantage: 99.78%
+TP: 0, FP: 22, FN: 0, TN: 9978
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 50 MIA Negative: 9950 Attack Accuracy:) 99.74999999995025 %
+TPR: 100.00%, TNR: 99.50%, Advantage: 99.50%
+TP: 0, FP: 50, FN: 0, TN: 9950
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 66 MIA Negative: 9934 Attack Accuracy:) 99.66999999995032 %
+TPR: 100.00%, TNR: 99.34%, Advantage: 99.34%
+TP: 0, FP: 66, FN: 0, TN: 9934
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 125 MIA Negative: 9875 Attack Accuracy:) 99.37499999995062 %
+TPR: 100.00%, TNR: 98.75%, Advantage: 98.75%
+TP: 0, FP: 125, FN: 0, TN: 9875
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 321 MIA Negative: 9679 Attack Accuracy:) 98.39499999995161 %
+TPR: 100.00%, TNR: 96.79%, Advantage: 96.79%
+TP: 0, FP: 321, FN: 0, TN: 9679
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 486 MIA Negative: 9514 Attack Accuracy:) 97.56999999995243 %
+TPR: 100.00%, TNR: 95.14%, Advantage: 95.14%
+TP: 0, FP: 486, FN: 0, TN: 9514
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 849 MIA Negative: 9151 Attack Accuracy:) 95.75499999995425 %
+TPR: 100.00%, TNR: 91.51%, Advantage: 91.51%
+TP: 0, FP: 849, FN: 0, TN: 9151
+=============== MIA Attack Loop 4 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 15 MIA Negative: 9985 Attack Accuracy:) 99.92499999995007 %
+TPR: 100.00%, TNR: 99.85%, Advantage: 99.85%
+TP: 0, FP: 15, FN: 0, TN: 9985
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 28 MIA Negative: 9972 Attack Accuracy:) 99.85999999995015 %
+TPR: 100.00%, TNR: 99.72%, Advantage: 99.72%
+TP: 0, FP: 28, FN: 0, TN: 9972
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 70 MIA Negative: 9930 Attack Accuracy:) 99.64999999995034 %
+TPR: 100.00%, TNR: 99.30%, Advantage: 99.30%
+TP: 0, FP: 70, FN: 0, TN: 9930
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 123 MIA Negative: 9877 Attack Accuracy:) 99.38499999995061 %
+TPR: 100.00%, TNR: 98.77%, Advantage: 98.77%
+TP: 0, FP: 123, FN: 0, TN: 9877
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 301 MIA Negative: 9699 Attack Accuracy:) 98.4949999999515 %
+TPR: 100.00%, TNR: 96.99%, Advantage: 96.99%
+TP: 0, FP: 301, FN: 0, TN: 9699
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 548 MIA Negative: 9452 Attack Accuracy:) 97.25999999995274 %
+TPR: 100.00%, TNR: 94.52%, Advantage: 94.52%
+TP: 0, FP: 548, FN: 0, TN: 9452
+================= MIA with batch size 256 =================
+^CTraceback (most recent call last):
+  File "/home/quannm/code/icml_promptmia/mia_stealth.py", line 431, in <module>
+    for batch_idx, (x, label) in enumerate(dataloader): #iterates through every single data point (x) from both the training and test sets. For each one, it tries to predict if it's a "member" or not.
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 790, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 119, in __getitem__
+    img = self.transform(img)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 277, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/functional.py", line 350, in normalize
+    return F_t.normalize(tensor, mean=mean, std=std, inplace=inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/_functional_tensor.py", line 928, in normalize
+    return tensor.sub_(mean).div_(std)
+           ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+None-gpus 1 --beta 0 --query_model_type vi
+L2P
+normal aggregation
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_spr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.7721.pt
+
+=============== MIA Attack Loop 1 ===============
+================= MIA with batch size 1 =================
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 20 MIA Negative: 9980 Attack Accuracy:) 99.8999999999501 %
+TPR: 100.00%, TNR: 99.80%, Advantage: 99.80%
+TP: 0, FP: 20, FN: 0, TN: 9980
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 69 MIA Negative: 9931 Attack Accuracy:) 99.65499999995033 %
+TPR: 100.00%, TNR: 99.31%, Advantage: 99.31%
+TP: 0, FP: 69, FN: 0, TN: 9931
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 160 MIA Negative: 9840 Attack Accuracy:) 99.19999999995079 %
+TPR: 100.00%, TNR: 98.40%, Advantage: 98.40%
+TP: 0, FP: 160, FN: 0, TN: 9840
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 311 MIA Negative: 9689 Attack Accuracy:) 98.44499999995155 %
+TPR: 100.00%, TNR: 96.89%, Advantage: 96.89%
+TP: 0, FP: 311, FN: 0, TN: 9689
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 521 MIA Negative: 9479 Attack Accuracy:) 97.3949999999526 %
+TPR: 100.00%, TNR: 94.79%, Advantage: 94.79%
+TP: 0, FP: 521, FN: 0, TN: 9479
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 884 MIA Negative: 9116 Attack Accuracy:) 95.57999999995441 %
+TPR: 100.00%, TNR: 91.16%, Advantage: 91.16%
+TP: 0, FP: 884, FN: 0, TN: 9116
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 1547 MIA Negative: 8453 Attack Accuracy:) 92.26499999995774 %
+TPR: 100.00%, TNR: 84.53%, Advantage: 84.53%
+TP: 0, FP: 1547, FN: 0, TN: 8453
+=============== MIA Attack Loop 2 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 1 MIA Negative: 9999 Attack Accuracy:) 99.99499999995001 %
+TPR: 100.00%, TNR: 99.99%, Advantage: 99.99%
+TP: 0, FP: 1, FN: 0, TN: 9999
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 23 MIA Negative: 9977 Attack Accuracy:) 99.88499999995011 %
+TPR: 100.00%, TNR: 99.77%, Advantage: 99.77%
+TP: 0, FP: 23, FN: 0, TN: 9977
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 64 MIA Negative: 9936 Attack Accuracy:) 99.67999999995033 %
+TPR: 100.00%, TNR: 99.36%, Advantage: 99.36%
+TP: 0, FP: 64, FN: 0, TN: 9936
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 146 MIA Negative: 9854 Attack Accuracy:) 99.26999999995073 %
+TPR: 100.00%, TNR: 98.54%, Advantage: 98.54%
+TP: 0, FP: 146, FN: 0, TN: 9854
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 307 MIA Negative: 9693 Attack Accuracy:) 98.46499999995153 %
+TPR: 100.00%, TNR: 96.93%, Advantage: 96.93%
+TP: 0, FP: 307, FN: 0, TN: 9693
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 534 MIA Negative: 9466 Attack Accuracy:) 97.32999999995266 %
+TPR: 100.00%, TNR: 94.66%, Advantage: 94.66%
+TP: 0, FP: 534, FN: 0, TN: 9466
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 948 MIA Negative: 9052 Attack Accuracy:) 95.25999999995474 %
+TPR: 100.00%, TNR: 90.52%, Advantage: 90.52%
+TP: 0, FP: 948, FN: 0, TN: 9052
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 1465 MIA Negative: 8535 Attack Accuracy:) 92.67499999995732 %
+TPR: 100.00%, TNR: 85.35%, Advantage: 85.35%
+TP: 0, FP: 1465, FN: 0, TN: 8535
+=============== MIA Attack Loop 3 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 38 MIA Negative: 9962 Attack Accuracy:) 99.8099999999502 %
+TPR: 100.00%, TNR: 99.62%, Advantage: 99.62%
+TP: 0, FP: 38, FN: 0, TN: 9962
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 58 MIA Negative: 9942 Attack Accuracy:) 99.7099999999503 %
+TPR: 100.00%, TNR: 99.42%, Advantage: 99.42%
+TP: 0, FP: 58, FN: 0, TN: 9942
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 128 MIA Negative: 9872 Attack Accuracy:) 99.35999999995065 %
+TPR: 100.00%, TNR: 98.72%, Advantage: 98.72%
+TP: 0, FP: 128, FN: 0, TN: 9872
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 284 MIA Negative: 9716 Attack Accuracy:) 98.57999999995141 %
+TPR: 100.00%, TNR: 97.16%, Advantage: 97.16%
+TP: 0, FP: 284, FN: 0, TN: 9716
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 502 MIA Negative: 9498 Attack Accuracy:) 97.4899999999525 %
+TPR: 100.00%, TNR: 94.98%, Advantage: 94.98%
+TP: 0, FP: 502, FN: 0, TN: 9498
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 971 MIA Negative: 9029 Attack Accuracy:) 95.14499999995485 %
+TPR: 100.00%, TNR: 90.29%, Advantage: 90.29%
+TP: 0, FP: 971, FN: 0, TN: 9029
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 1558 MIA Negative: 8442 Attack Accuracy:) 92.20999999995779 %
+TPR: 100.00%, TNR: 84.42%, Advantage: 84.42%
+TP: 0, FP: 1558, FN: 0, TN: 8442
+=============== MIA Attack Loop 4 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 27 MIA Negative: 9973 Attack Accuracy:) 99.86499999995013 %
+TPR: 100.00%, TNR: 99.73%, Advantage: 99.73%
+TP: 0, FP: 27, FN: 0, TN: 9973
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 78 MIA Negative: 9922 Attack Accuracy:) 99.60999999995039 %
+TPR: 100.00%, TNR: 99.22%, Advantage: 99.22%
+TP: 0, FP: 78, FN: 0, TN: 9922
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 144 MIA Negative: 9856 Attack Accuracy:) 99.27999999995072 %
+TPR: 100.00%, TNR: 98.56%, Advantage: 98.56%
+TP: 0, FP: 144, FN: 0, TN: 9856
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 286 MIA Negative: 9714 Attack Accuracy:) 98.56999999995142 %
+TPR: 100.00%, TNR: 97.14%, Advantage: 97.14%
+TP: 0, FP: 286, FN: 0, TN: 9714
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 534 MIA Negative: 9466 Attack Accuracy:) 97.32999999995266 %
+TPR: 100.00%, TNR: 94.66%, Advantage: 94.66%
+TP: 0, FP: 534, FN: 0, TN: 9466
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 936 MIA Negative: 9064 Attack Accuracy:) 95.31999999995467 %
+TPR: 100.00%, TNR: 90.64%, Advantage: 90.64%
+TP: 0, FP: 936, FN: 0, TN: 9064
+================= MIA with batch size 256 =================
+^CTraceback (most recent call last):
+  File "/home/quannm/code/icml_promptmia/mia_stealth.py", line 446, in <module>
+    cls_features.append(algo.server_model.get_cls_keys(x_single)) # get q(x)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/code/icml_promptmia/Models/L2P_heuristic_model.py", line 171, in get_cls_keys
+    x = self.vit_b32.encoder(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/models/vision_transformer.py", line 157, in forward
+    return self.ln(self.layers(self.dropout(input)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/container.py", line 244, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/models/vision_transformer.py", line 113, in forward
+    x, _ = self.self_attention(x, x, x, need_weights=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 1320, in forward
+    return torch._native_multi_head_attention(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+quannm@Suramar:~/code/icml_promptmia$
+  from tqdm._tqdm import trange
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)                                                               n_t
+  entry = pickle.load(f, encoding="latin1")                                                                               -datas
+Noneif                                                                                                                 ar100 --d
+L2P                                                                                                                 a_min 0.02 -
+normal aggregation                                                                                               -delta_max 0
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defmix_up_mix0p2_spr0p0_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.7609.pt
+                                                                                                        query_model_
+=============== MIA Attack Loop 1 ===============                                                    type vit_cls
+================= MIA with batch size 1 =================                                           --load_mod
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 9 MIA Negative: 9991 Attack Accuracy:) 99.95499999995003 %
+TPR: 100.00%, TNR: 99.91%, Advantage: 99.91%
+TP: 0, FP: 9, FN: 0, TN: 9991
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 12 MIA Negative: 9988 Attack Accuracy:) 99.93999999995006 %
+TPR: 100.00%, TNR: 99.88%, Advantage: 99.88%
+TP: 0, FP: 12, FN: 0, TN: 9988
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 34 MIA Negative: 9966 Attack Accuracy:) 99.82999999995018 %
+TPR: 100.00%, TNR: 99.66%, Advantage: 99.66%
+TP: 0, FP: 34, FN: 0, TN: 9966
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 66 MIA Negative: 9934 Attack Accuracy:) 99.66999999995032 %
+TPR: 100.00%, TNR: 99.34%, Advantage: 99.34%
+TP: 0, FP: 66, FN: 0, TN: 9934
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 125 MIA Negative: 9875 Attack Accuracy:) 99.37499999995062 %
+TPR: 100.00%, TNR: 98.75%, Advantage: 98.75%
+TP: 0, FP: 125, FN: 0, TN: 9875
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 254 MIA Negative: 9746 Attack Accuracy:) 98.72999999995127 %
+TPR: 100.00%, TNR: 97.46%, Advantage: 97.46%
+TP: 0, FP: 254, FN: 0, TN: 9746
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 456 MIA Negative: 9544 Attack Accuracy:) 97.71999999995228 %
+TPR: 100.00%, TNR: 95.44%, Advantage: 95.44%
+TP: 0, FP: 456, FN: 0, TN: 9544
+=============== MIA Attack Loop 2 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 9 MIA Negative: 9991 Attack Accuracy:) 99.95499999995003 %
+TPR: 100.00%, TNR: 99.91%, Advantage: 99.91%
+TP: 0, FP: 9, FN: 0, TN: 9991
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 18 MIA Negative: 9982 Attack Accuracy:) 99.90999999995009 %
+TPR: 100.00%, TNR: 99.82%, Advantage: 99.82%
+TP: 0, FP: 18, FN: 0, TN: 9982
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 48 MIA Negative: 9952 Attack Accuracy:) 99.75999999995024 %
+TPR: 100.00%, TNR: 99.52%, Advantage: 99.52%
+TP: 0, FP: 48, FN: 0, TN: 9952
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 74 MIA Negative: 9926 Attack Accuracy:) 99.62999999995037 %
+TPR: 100.00%, TNR: 99.26%, Advantage: 99.26%
+TP: 0, FP: 74, FN: 0, TN: 9926
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 127 MIA Negative: 9873 Attack Accuracy:) 99.36499999995063 %
+TPR: 100.00%, TNR: 98.73%, Advantage: 98.73%
+TP: 0, FP: 127, FN: 0, TN: 9873
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 261 MIA Negative: 9739 Attack Accuracy:) 98.6949999999513 %
+TPR: 100.00%, TNR: 97.39%, Advantage: 97.39%
+TP: 0, FP: 261, FN: 0, TN: 9739
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 507 MIA Negative: 9493 Attack Accuracy:) 97.46499999995252 %
+TPR: 100.00%, TNR: 94.93%, Advantage: 94.93%
+TP: 0, FP: 507, FN: 0, TN: 9493
+=============== MIA Attack Loop 3 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 6 MIA Negative: 9994 Attack Accuracy:) 99.96999999995002 %
+TPR: 100.00%, TNR: 99.94%, Advantage: 99.94%
+TP: 0, FP: 6, FN: 0, TN: 9994
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 15 MIA Negative: 9985 Attack Accuracy:) 99.92499999995007 %
+TPR: 100.00%, TNR: 99.85%, Advantage: 99.85%
+TP: 0, FP: 15, FN: 0, TN: 9985
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 34 MIA Negative: 9966 Attack Accuracy:) 99.82999999995018 %
+TPR: 100.00%, TNR: 99.66%, Advantage: 99.66%
+TP: 0, FP: 34, FN: 0, TN: 9966
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 73 MIA Negative: 9927 Attack Accuracy:) 99.63499999995035 %
+TPR: 100.00%, TNR: 99.27%, Advantage: 99.27%
+TP: 0, FP: 73, FN: 0, TN: 9927
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 146 MIA Negative: 9854 Attack Accuracy:) 99.26999999995073 %
+TPR: 100.00%, TNR: 98.54%, Advantage: 98.54%
+TP: 0, FP: 146, FN: 0, TN: 9854
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 293 MIA Negative: 9707 Attack Accuracy:) 98.53499999995145 %
+TPR: 100.00%, TNR: 97.07%, Advantage: 97.07%
+TP: 0, FP: 293, FN: 0, TN: 9707
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 493 MIA Negative: 9507 Attack Accuracy:) 97.53499999995245 %
+TPR: 100.00%, TNR: 95.07%, Advantage: 95.07%
+TP: 0, FP: 493, FN: 0, TN: 9507
+=============== MIA Attack Loop 4 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 6 MIA Negative: 9994 Attack Accuracy:) 99.96999999995002 %
+TPR: 100.00%, TNR: 99.94%, Advantage: 99.94%
+TP: 0, FP: 6, FN: 0, TN: 9994
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 23 MIA Negative: 9977 Attack Accuracy:) 99.88499999995011 %
+TPR: 100.00%, TNR: 99.77%, Advantage: 99.77%
+TP: 0, FP: 23, FN: 0, TN: 9977
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 29 MIA Negative: 9971 Attack Accuracy:) 99.85499999995014 %
+TPR: 100.00%, TNR: 99.71%, Advantage: 99.71%
+TP: 0, FP: 29, FN: 0, TN: 9971
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 60 MIA Negative: 9940 Attack Accuracy:) 99.6999999999503 %
+TPR: 100.00%, TNR: 99.40%, Advantage: 99.40%
+TP: 0, FP: 60, FN: 0, TN: 9940
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 136 MIA Negative: 9864 Attack Accuracy:) 99.31999999995067 %
+TPR: 100.00%, TNR: 98.64%, Advantage: 98.64%
+TP: 0, FP: 136, FN: 0, TN: 9864
+================= MIA with batch size 128 =================
+^CTraceback (most recent call last):
+  File "/home/quannm/code/icml_promptmia/mia_stealth.py", line 431, in <module>
+    for batch_idx, (x, label) in enumerate(dataloader): #iterates through every single data point (x) from both the training and test sets. For each one, it tries to predict if it's a "member" or not.
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 790, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 119, in __getitem__
+    img = self.transform(img)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 354, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/functional.py", line 477, in resize
+    return F_pil.resize(img, size=output_size, interpolation=pil_interpolation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/transforms/_functional_pil.py", line 253, in resize
+    return img.resize(tuple(size[::-1]), interpolation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/PIL/Image.py", line 2323, in resize
+    return self._new(self.im.resize(size, resample, box))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar100 --delta_min 0.02 --delta_max 0.05 --gpus 0 --beta 0 --query_model_type vit_cls  --load_model /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defnone_mix0p2_spr0p0_ptb0p0_aug1_sprop1p0_csuniform_round_60_acc_0.7526.pt
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`100 -
+  from tqdm._tqdm import trange 4 --dataset cifar100 --delta_min 0.02 --delta_max 0.05 --gpus 0 --bet
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)                                     uery_model_type vit_cls  --
+  entry = pickle.load(f, encoding="latin1")
+None
+L2P
+normal aggregation
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defnone_mix0p2_spr0p0_ptb0p0_aug1_sprop1p0_csuniform_round_60_acc_0.7526.pt
+
+=============== MIA Attack Loop 1 ===============
+================= MIA with batch size 1 =================
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 5 MIA Negative: 9995 Attack Accuracy:) 99.97499999995001 %
+TPR: 100.00%, TNR: 99.95%, Advantage: 99.95%
+TP: 0, FP: 5, FN: 0, TN: 9995
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 18 MIA Negative: 9982 Attack Accuracy:) 99.90999999995009 %
+TPR: 100.00%, TNR: 99.82%, Advantage: 99.82%
+TP: 0, FP: 18, FN: 0, TN: 9982
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 31 MIA Negative: 9969 Attack Accuracy:) 99.84499999995016 %
+TPR: 100.00%, TNR: 99.69%, Advantage: 99.69%
+TP: 0, FP: 31, FN: 0, TN: 9969
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 68 MIA Negative: 9932 Attack Accuracy:) 99.65999999995034 %
+TPR: 100.00%, TNR: 99.32%, Advantage: 99.32%
+TP: 0, FP: 68, FN: 0, TN: 9932
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 131 MIA Negative: 9869 Attack Accuracy:) 99.34499999995066 %
+TPR: 100.00%, TNR: 98.69%, Advantage: 98.69%
+TP: 0, FP: 131, FN: 0, TN: 9869
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 251 MIA Negative: 9749 Attack Accuracy:) 98.74499999995126 %
+TPR: 100.00%, TNR: 97.49%, Advantage: 97.49%
+TP: 0, FP: 251, FN: 0, TN: 9749
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 436 MIA Negative: 9564 Attack Accuracy:) 97.81999999995217 %
+TPR: 100.00%, TNR: 95.64%, Advantage: 95.64%
+TP: 0, FP: 436, FN: 0, TN: 9564
+=============== MIA Attack Loop 2 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 7 MIA Negative: 9993 Attack Accuracy:) 99.96499999995004 %
+TPR: 100.00%, TNR: 99.93%, Advantage: 99.93%
+TP: 0, FP: 7, FN: 0, TN: 9993
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 21 MIA Negative: 9979 Attack Accuracy:) 99.8949999999501 %
+TPR: 100.00%, TNR: 99.79%, Advantage: 99.79%
+TP: 0, FP: 21, FN: 0, TN: 9979
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 36 MIA Negative: 9964 Attack Accuracy:) 99.81999999995017 %
+TPR: 100.00%, TNR: 99.64%, Advantage: 99.64%
+TP: 0, FP: 36, FN: 0, TN: 9964
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 55 MIA Negative: 9945 Attack Accuracy:) 99.72499999995027 %
+TPR: 100.00%, TNR: 99.45%, Advantage: 99.45%
+TP: 0, FP: 55, FN: 0, TN: 9945
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 143 MIA Negative: 9857 Attack Accuracy:) 99.28499999995071 %
+TPR: 100.00%, TNR: 98.57%, Advantage: 98.57%
+TP: 0, FP: 143, FN: 0, TN: 9857
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 252 MIA Negative: 9748 Attack Accuracy:) 98.73999999995125 %
+TPR: 100.00%, TNR: 97.48%, Advantage: 97.48%
+TP: 0, FP: 252, FN: 0, TN: 9748
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 462 MIA Negative: 9538 Attack Accuracy:) 97.6899999999523 %
+TPR: 100.00%, TNR: 95.38%, Advantage: 95.38%
+TP: 0, FP: 462, FN: 0, TN: 9538
+=============== MIA Attack Loop 3 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 8 MIA Negative: 9992 Attack Accuracy:) 99.95999999995003 %
+TPR: 100.00%, TNR: 99.92%, Advantage: 99.92%
+TP: 0, FP: 8, FN: 0, TN: 9992
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 17 MIA Negative: 9983 Attack Accuracy:) 99.91499999995008 %
+TPR: 100.00%, TNR: 99.83%, Advantage: 99.83%
+TP: 0, FP: 17, FN: 0, TN: 9983
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 33 MIA Negative: 9967 Attack Accuracy:) 99.83499999995016 %
+TPR: 100.00%, TNR: 99.67%, Advantage: 99.67%
+TP: 0, FP: 33, FN: 0, TN: 9967
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 74 MIA Negative: 9926 Attack Accuracy:) 99.62999999995037 %
+TPR: 100.00%, TNR: 99.26%, Advantage: 99.26%
+TP: 0, FP: 74, FN: 0, TN: 9926
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 152 MIA Negative: 9848 Attack Accuracy:) 99.23999999995075 %
+TPR: 100.00%, TNR: 98.48%, Advantage: 98.48%
+TP: 0, FP: 152, FN: 0, TN: 9848
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 261 MIA Negative: 9739 Attack Accuracy:) 98.6949999999513 %
+TPR: 100.00%, TNR: 97.39%, Advantage: 97.39%
+TP: 0, FP: 261, FN: 0, TN: 9739
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 463 MIA Negative: 9537 Attack Accuracy:) 97.68499999995231 %
+TPR: 100.00%, TNR: 95.37%, Advantage: 95.37%
+TP: 0, FP: 463, FN: 0, TN: 9537
+=============== MIA Attack Loop 4 ===============
+================= MIA with batch size 1 =================
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 3 MIA Negative: 9997 Attack Accuracy:) 99.98499999995 %
+TPR: 100.00%, TNR: 99.97%, Advantage: 99.97%
+TP: 0, FP: 3, FN: 0, TN: 9997
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 11 MIA Negative: 9989 Attack Accuracy:) 99.94499999995006 %
+TPR: 100.00%, TNR: 99.89%, Advantage: 99.89%
+TP: 0, FP: 11, FN: 0, TN: 9989
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 26 MIA Negative: 9974 Attack Accuracy:) 99.86999999995012 %
+TPR: 100.00%, TNR: 99.74%, Advantage: 99.74%
+TP: 0, FP: 26, FN: 0, TN: 9974
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 72 MIA Negative: 9928 Attack Accuracy:) 99.63999999995036 %
+TPR: 100.00%, TNR: 99.28%, Advantage: 99.28%
+TP: 0, FP: 72, FN: 0, TN: 9928
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 123 MIA Negative: 9877 Attack Accuracy:) 99.38499999995061 %
+TPR: 100.00%, TNR: 98.77%, Advantage: 98.77%
+TP: 0, FP: 123, FN: 0, TN: 9877
+================= MIA with batch size 128 =================
+^CTraceback (most recent call last):
+  File "/home/quannm/code/icml_promptmia/mia_stealth.py", line 457, in <module>
+    temp_cls_features.append(algo.server_model.get_cls_keys(temp_x))  
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/code/icml_promptmia/Models/L2P_heuristic_model.py", line 171, in get_cls_keys
+    x = self.vit_b32.encoder(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/models/vision_transformer.py", line 157, in forward
+    return self.ln(self.layers(self.dropout(input)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/container.py", line 244, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torchvision/models/vision_transformer.py", line 113, in forward
+    x, _ = self.self_attention(x, x, x, need_weights=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/quannm/.local/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 1320, in forward
+    return torch._native_multi_head_attention(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C
+(tum2) quannm@Suramar:~/code/icml_promptmia$ ^C

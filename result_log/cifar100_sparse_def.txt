@@ -1,0 +1,57 @@
+tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar100 --delta_min 0.02 --delt
+a_max 0.05 --gpus 0 --beta 0 --query_model_type vit_cls --load_model /home/quannm/code/icml_promptmia/output_record/saved_
+model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_s
+pr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.7721.pt --defense sparse --sparse_ratio 0.8^C                         
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar100 --delta_min 0.02 --delt
+a_max 0.05 --gpus 0 --beta 0 --query_model_type vit_cls --load_model /home/quannm/code/icml_promptmia/output_record/saved_
+model/saved_model_L2P_fedavg_cifar100_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_s
+pr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.7721.pt --defense sparse --sparse_ratio 0.8                           
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0   
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`                                                                         
+  from tqdm._tqdm import trange                                                                                           
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): ali
+gn should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? 
+(Deprecated NumPy 2.4)                           
+ entry = pickle.load(f, encoding="latin1")                                                                       [65/751]
+None                                                         
+L2P                                                          
+normal aggregation                                           
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar100_80clietns_cro
+ss_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_spr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0
+.7721.pt           
+================ MIA with batch size 1 =================                                                         [56/751]
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extre
+mely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor.
+ (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%               
+TP: 0, FP: 0, FN: 0, TN: 10000                               
+================= MIA with batch size 4 =================    
+mia batch size: 4 MIA Positive: 23 MIA Negative: 9977 Attack Accuracy:) 99.88499999995011 %
+TPR: 100.00%, TNR: 99.77%, Advantage: 99.77%                 
+TP: 0, FP: 23, FN: 0, TN: 9977                               
+================= MIA with batch size 8 =================    
+mia batch size: 8 MIA Positive: 80 MIA Negative: 9920 Attack Accuracy:) 99.5999999999504 %
+TPR: 100.00%, TNR: 99.20%, Advantage: 99.20%                 
+TP: 0, FP: 80, FN: 0, TN: 9920                               
+================= MIA with batch size 16 =================                                                                
+mia batch size: 16 MIA Positive: 146 MIA Negative: 9854 Attack Accuracy:) 99.26999999995073 %
+TPR: 100.00%, TNR: 98.54%, Advantage: 98.54%                 
+TP: 0, FP: 146, FN: 0, TN: 9854                              
+================= MIA with batch size 32 =================                                                                
+mia batch size: 32 MIA Positive: 295 MIA Negative: 9705 Attack Accuracy:) 98.52499999995148 %
+TPR: 100.00%, TNR: 97.05%, Advantage: 97.05%                 
+TP: 0, FP: 295, FN: 0, TN: 9705                              
+================= MIA with batch size 64 =================                                                                
+mia batch size: 64 MIA Positive: 532 MIA Negative: 9468 Attack Accuracy:) 97.33999999995267 %
+TPR: 100.00%, TNR: 94.68%, Advantage: 94.68%                 
+TP: 0, FP: 532, FN: 0, TN: 9468                  
+================= MIA with batch size 128 =================                                                               
+mia batch size: 128 MIA Positive: 966 MIA Negative: 9034 Attack Accuracy:) 95.16999999995483 %
+TPR: 100.00%, TNR: 90.34%, Advantage: 90.34%                 
+TP: 0, FP: 966, FN: 0, TN: 9034                              
+================= MIA with batch size 256 =================                                                               
+mia batch size: 256 MIA Positive: 1531 MIA Negative: 8469 Attack Accuracy:) 92.34499999995765 %
+TPR: 100.00%, TNR: 84.69%, Advantage: 84.69%
+TP: 0, FP: 1531, FN: 0, TN: 8469

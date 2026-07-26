@@ -1,0 +1,244 @@
+python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 1 --beta 0 --query_model_type vit_cls  --load_model /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_round_61_acc_0.9442.pt
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 1 --beta 0 --query_model_type vit_cls  --load_model
+ /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fed                                                                                                               
+avg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_round_61_acc_0.9442.pt                                                                                          
+                                                                                                                                                                                              
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0                                                                       
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`                                                                                                                                             
+  from tqdm._tqdm import trange                                                                                                                                                               
+None                                                                                                                                                                                          
+L2P                                                                                                                                                                                           
+normal aggregation                                                                                                                                                                            
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_round_61_acc_0.9
+442.pt                                                                                                                                                                                        
+                                                                                                                                                                                              
+================= MIA with batch size 256 =================                                                                                                                                   
+/home/quannm/code/icml_promptmia/mia_stealth.py:477: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.nda
+rray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)                                                                
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)                                                                                    
+mia batch size: 256 MIA Positive: 50645 MIA Negative: 9355 Attack Accuracy:) 96.77499999994322 %                                                                                              
+TPR: 100.00%, TNR: 93.55%, Advantage: 93.55%                                                                                                                                                  
+TP: 50000, FP: 645, FN: 0, TN: 9355                                                                                                                                                           
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 1 --beta 0 --query_model_type vit_cls  --load_model
+ /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_round_61_acc_0.9442.pt           
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0                                                                       
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`                                                                                                                                             
+  from tqdm._tqdm import trange                                                                                                                                                               
+None                                                                                                                                                                                          
+L2P                                                                                                                                                                                           
+normal aggregation                                                                                                                                                                            
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_round_61_acc_0.9
+442.pt                                                    
+
+=============== MIA Attack Loop 1 ===============                                                                                                                                    [148/180]
+================= MIA with batch size 1 =================                                                                                                                                     
+/home/quannm/code/icml_promptmia/mia_stealth.py:479: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.nda
+rray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)                                                                
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)                                                                                    
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %                                                                                                   
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%                                                                                                                                                
+TP: 0, FP: 0, FN: 0, TN: 10000                                                                                                                                                                
+================= MIA with batch size 4 =================                                                                                                                                     
+mia batch size: 4 MIA Positive: 15 MIA Negative: 9985 Attack Accuracy:) 99.92499999995007 %                                                                                                   
+TPR: 100.00%, TNR: 99.85%, Advantage: 99.85%                                                   
+TP: 0, FP: 15, FN: 0, TN: 9985                                                                                                                                                                
+================= MIA with batch size 8 =================                                                                                                                                     
+^[[Amia batch size: 8 MIA Positive: 47 MIA Negative: 9953 Attack Accuracy:) 99.76499999995023 %                                                                                               
+TPR: 100.00%, TNR: 99.53%, Advantage: 99.53%                                                                                                                                                  
+TP: 0, FP: 47, FN: 0, TN: 9953                                                                                                                                                                
+================= MIA with batch size 16 =================                                                                                                                                    
+mia batch size: 16 MIA Positive: 88 MIA Negative: 9912 Attack Accuracy:) 99.55999999995045 %                                                                                                  
+TPR: 100.00%, TNR: 99.12%, Advantage: 99.12%                                                                                                                                                  
+TP: 0, FP: 88, FN: 0, TN: 9912                                                                                                                                                                
+================= MIA with batch size 32 =================                                                                                                                                    
+mia batch size: 32 MIA Positive: 159 MIA Negative: 9841 Attack Accuracy:) 99.2049999999508 %                                                                                                  
+TPR: 100.00%, TNR: 98.41%, Advantage: 98.41%                                                                                                                                                  
+TP: 0, FP: 159, FN: 0, TN: 9841                                                                                                                                                               
+================= MIA with batch size 64 =================                                                                                                                                    
+mia batch size: 64 MIA Positive: 298 MIA Negative: 9702 Attack Accuracy:) 98.50999999995149 %                                                                                                 
+TPR: 100.00%, TNR: 97.02%, Advantage: 97.02%                                                                                                                                                  
+TP: 0, FP: 298, FN: 0, TN: 9702                                                                                                                                                               
+================= MIA with batch size 128 =================                                                                                                                                   
+mia batch size: 128 MIA Positive: 454 MIA Negative: 9546 Attack Accuracy:) 97.72999999995227 %                                                                                                
+TPR: 100.00%, TNR: 95.46%, Advantage: 95.46%                                                                                                                                                  
+TP: 0, FP: 454, FN: 0, TN: 9546                                                                                                                                                               
+================= MIA with batch size 256 =================                                                                                                                                   
+mia batch size: 256 MIA Positive: 701 MIA Negative: 9299 Attack Accuracy:) 96.4949999999535 %                                                                                                 
+TPR: 100.00%, TNR: 92.99%, Advantage: 92.99%                                                   
+TP: 0, FP: 701, FN: 0, TN: 9299                                                                                                                                                               
+================= MIA with batch size 512 =================                                                                                                                                   
+mia batch size: 512 MIA Positive: 890 MIA Negative: 9110 Attack Accuracy:) 95.54999999995444 %                                                                                                
+TPR: 100.00%, TNR: 91.10%, Advantage: 91.10%                                                   
+TP: 0, FP: 890, FN: 0, TN: 9110                                                                                                                                                               
+================= MIA with batch size 1024 =================                                                                                                                                  
+mia batch size: 1024 MIA Positive: 1201 MIA Negative: 8799 Attack Accuracy:) 93.994999999956 %                                                                                                
+TPR: 100.00%, TNR: 87.99%, Advantage: 87.99%                                                   
+TP: 0, FP: 1201, FN: 0, TN: 8799                       
+
+=============== MIA Attack Loop 2 ===============                                                                                                                                             
+================= MIA with batch size 1 =================                                                                                                                                     
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %                                                                                                   
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%                                                 
+TP: 0, FP: 0, FN: 0, TN: 10000                                                                                                                                                                
+================= MIA with batch size 4 =================                                                                                                                                     
+mia batch size: 4 MIA Positive: 30 MIA Negative: 9970 Attack Accuracy:) 99.84999999995014 %                                                                                                   
+TPR: 100.00%, TNR: 99.70%, Advantage: 99.70%                                                   
+TP: 0, FP: 30, FN: 0, TN: 9970                                                                                                                                                                
+================= MIA with batch size 8 =================                                                                                                                                     
+mia batch size: 8 MIA Positive: 38 MIA Negative: 9962 Attack Accuracy:) 99.8099999999502 %                                                                                                    
+TPR: 100.00%, TNR: 99.62%, Advantage: 99.62%                                                   
+TP: 0, FP: 38, FN: 0, TN: 9962                                                                                                                                                                
+================= MIA with batch size 16 =================                                                                                                                                    
+mia batch size: 16 MIA Positive: 90 MIA Negative: 9910 Attack Accuracy:) 99.54999999995044 %                                                                                                  
+TPR: 100.00%, TNR: 99.10%, Advantage: 99.10%                                                   
+TP: 0, FP: 90, FN: 0, TN: 9910                                                                 
+================= MIA with batch size 32 =================                                                                                                                                    
+mia batch size: 32 MIA Positive: 151 MIA Negative: 9849 Attack Accuracy:) 99.24499999995075 %                                                                                                 
+TPR: 100.00%, TNR: 98.49%, Advantage: 98.49%                                                   
+TP: 0, FP: 151, FN: 0, TN: 9849                                                                
+================= MIA with batch size 64 =================                                                                                                                                    
+mia batch size: 64 MIA Positive: 275 MIA Negative: 9725 Attack Accuracy:) 98.62499999995138 %                                                                                                 
+TPR: 100.00%, TNR: 97.25%, Advantage: 97.25%                                                   
+TP: 0, FP: 275, FN: 0, TN: 9725                                                                
+================= MIA with batch size 128 =================                                                                                                                                   
+mia batch size: 128 MIA Positive: 451 MIA Negative: 9549 Attack Accuracy:) 97.74499999995226 %                                                                                                
+TPR: 100.00%, TNR: 95.49%, Advantage: 95.49%                                                   
+TP: 0, FP: 451, FN: 0, TN: 9549                                                                
+================= MIA with batch size 256 =================                                                                                                                                   
+mia batch size: 256 MIA Positive: 678 MIA Negative: 9322 Attack Accuracy:) 96.60999999995339 %                                                                                                
+TPR: 100.00%, TNR: 93.22%, Advantage: 93.22%                                                   
+TP: 0, FP: 678, FN: 0, TN: 9322                                                                
+================= MIA with batch size 512 =================                                                                                                                                   
+mia batch size: 512 MIA Positive: 848 MIA Negative: 9152 Attack Accuracy:) 95.75999999995423 %                                                                                                
+TPR: 100.00%, TNR: 91.52%, Advantage: 91.52%                                                   
+TP: 0, FP: 848, FN: 0, TN: 9152                                                                
+================= MIA with batch size 1024 =================                                                                                                                                  
+mia batch size: 1024 MIA Positive: 1128 MIA Negative: 8872 Attack Accuracy:) 94.35999999995563 %                                                                                              
+TPR: 100.00%, TNR: 88.72%, Advantage: 88.72%                                                   
+TP: 0, FP: 1128, FN: 0, TN: 8872     
+
+=============== MIA Attack Loop 3 ===============                                              
+================= MIA with batch size 1 =================                                                                                                                                     
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %                                                                                                   
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%                                                 
+TP: 0, FP: 0, FN: 0, TN: 10000                                                                 
+================= MIA with batch size 4 =================                                                                                                                                     
+mia batch size: 4 MIA Positive: 20 MIA Negative: 9980 Attack Accuracy:) 99.8999999999501 %                                                                                                    
+TPR: 100.00%, TNR: 99.80%, Advantage: 99.80%                                                   
+TP: 0, FP: 20, FN: 0, TN: 9980                                                                 
+================= MIA with batch size 8 =================                                                                                                                                     
+mia batch size: 8 MIA Positive: 42 MIA Negative: 9958 Attack Accuracy:) 99.78999999995021 %                                                                                                   
+TPR: 100.00%, TNR: 99.58%, Advantage: 99.58%                                                   
+TP: 0, FP: 42, FN: 0, TN: 9958                                                                 
+================= MIA with batch size 16 =================                                                                                                                                    
+mia batch size: 16 MIA Positive: 85 MIA Negative: 9915 Attack Accuracy:) 99.57499999995042 %                                                                                                  
+TPR: 100.00%, TNR: 99.15%, Advantage: 99.15%                                                   
+TP: 0, FP: 85, FN: 0, TN: 9915                                                                 
+================= MIA with batch size 32 =================                                                                                                                                    
+mia batch size: 32 MIA Positive: 159 MIA Negative: 9841 Attack Accuracy:) 99.2049999999508 %                                                                                                  
+TPR: 100.00%, TNR: 98.41%, Advantage: 98.41%                                                   
+TP: 0, FP: 159, FN: 0, TN: 9841                                                                
+================= MIA with batch size 64 =================                                                                                                                                    
+mia batch size: 64 MIA Positive: 296 MIA Negative: 9704 Attack Accuracy:) 98.51999999995147 %                                                                                                 
+TPR: 100.00%, TNR: 97.04%, Advantage: 97.04%                                                   
+TP: 0, FP: 296, FN: 0, TN: 9704                                                                
+================= MIA with batch size 128 =================                                                                                                                                   
+mia batch size: 128 MIA Positive: 439 MIA Negative: 9561 Attack Accuracy:) 97.80499999995219 %                                                                                                
+TPR: 100.00%, TNR: 95.61%, Advantage: 95.61%                                                   
+TP: 0, FP: 439, FN: 0, TN: 9561                                                                
+================= MIA with batch size 256 =================                                                                                                                                   
+mia batch size: 256 MIA Positive: 696 MIA Negative: 9304 Attack Accuracy:) 96.51999999995347 %                                                                                                
+TPR: 100.00%, TNR: 93.04%, Advantage: 93.04%                                                   
+TP: 0, FP: 696, FN: 0, TN: 9304                                                                
+================= MIA with batch size 512 =================                                                                                                                                   
+mia batch size: 512 MIA Positive: 830 MIA Negative: 9170 Attack Accuracy:) 95.84999999995414 %                                                                                                
+TPR: 100.00%, TNR: 91.70%, Advantage: 91.70%                                                   
+TP: 0, FP: 830, FN: 0, TN: 9170                                                                
+================= MIA with batch size 1024 =================                                                                                                                                  
+mia batch size: 1024 MIA Positive: 1127 MIA Negative: 8873 Attack Accuracy:) 94.36499999995563 %                                                                                              
+TPR: 100.00%, TNR: 88.73%, Advantage: 88.73%                                                   
+TP: 0, FP: 1127, FN: 0, TN: 8873                            
+
+=============== MIA Attack Loop 4 ===============                                              
+================= MIA with batch size 1 =================                                                                                                                                     
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %                                                                                                   
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%                                                 
+TP: 0, FP: 0, FN: 0, TN: 10000                                                                 
+================= MIA with batch size 4 =================                                                                                                                                     
+mia batch size: 4 MIA Positive: 16 MIA Negative: 9984 Attack Accuracy:) 99.91999999995006 %                                                                                                   
+TPR: 100.00%, TNR: 99.84%, Advantage: 99.84%                                                   
+TP: 0, FP: 16, FN: 0, TN: 9984                                                                 
+================= MIA with batch size 8 =================                                                                                                                                     
+mia batch size: 8 MIA Positive: 39 MIA Negative: 9961 Attack Accuracy:) 99.80499999995018 %                                                                                                   
+TPR: 100.00%, TNR: 99.61%, Advantage: 99.61%                                                   
+TP: 0, FP: 39, FN: 0, TN: 9961                                                                 
+================= MIA with batch size 16 =================                                                                                                                                    
+mia batch size: 16 MIA Positive: 88 MIA Negative: 9912 Attack Accuracy:) 99.55999999995045 %                                                                                                  
+TPR: 100.00%, TNR: 99.12%, Advantage: 99.12%                                                   
+TP: 0, FP: 88, FN: 0, TN: 9912                 
+================= MIA with batch size 32 =================                                     
+mia batch size: 32 MIA Positive: 163 MIA Negative: 9837 Attack Accuracy:) 99.1849999999508 %                                                                                                  
+TPR: 100.00%, TNR: 98.37%, Advantage: 98.37%                                                   
+TP: 0, FP: 163, FN: 0, TN: 9837                
+================= MIA with batch size 64 =================                                     
+^[[A^[[A^[[A^[[Amia batch size: 64 MIA Positive: 259 MIA Negative: 9741 Attack Accuracy:) 98.7049999999513 %                                                                                  
+TPR: 100.00%, TNR: 97.41%, Advantage: 97.41%                                                   
+TP: 0, FP: 259, FN: 0, TN: 9741                
+================= MIA with batch size 128 =================                                    
+mia batch size: 128 MIA Positive: 415 MIA Negative: 9585 Attack Accuracy:) 97.92499999995208 %                                                                                                
+TPR: 100.00%, TNR: 95.85%, Advantage: 95.85%                                                   
+TP: 0, FP: 415, FN: 0, TN: 9585                                                                
+================= MIA with batch size 256 =================                                    
+mia batch size: 256 MIA Positive: 642 MIA Negative: 9358 Attack Accuracy:) 96.78999999995321 %                                                                                                
+TPR: 100.00%, TNR: 93.58%, Advantage: 93.58%                                                   
+TP: 0, FP: 642, FN: 0, TN: 9358                                                                
+================= MIA with batch size 512 =================                                    
+mia batch size: 512 MIA Positive: 905 MIA Negative: 9095 Attack Accuracy:) 95.47499999995452 %                                                                                                
+TPR: 100.00%, TNR: 90.95%, Advantage: 90.95%                                                   
+TP: 0, FP: 905, FN: 0, TN: 9095                
+================= MIA with batch size 1024 =================                                   
+mia batch size: 1024 MIA Positive: 1103 MIA Negative: 8897 Attack Accuracy:) 94.4849999999555 %                                                                                               
+TPR: 100.00%, TNR: 88.97%, Advantage: 88.97%                                                   
+TP: 0, FP: 1103, FN: 0, TN: 8897 
+
+=============== MIA Attack Loop 5 ===============                                              
+================= MIA with batch size 1 =================                                      
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %                                                                                                   
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%                                                 
+TP: 0, FP: 0, FN: 0, TN: 10000                 
+================= MIA with batch size 4 =================                                      
+mia batch size: 4 MIA Positive: 16 MIA Negative: 9984 Attack Accuracy:) 99.91999999995006 %                                                                                                   
+TPR: 100.00%, TNR: 99.84%, Advantage: 99.84%                                                   
+TP: 0, FP: 16, FN: 0, TN: 9984                 
+================= MIA with batch size 8 =================                                      
+mia batch size: 8 MIA Positive: 37 MIA Negative: 9963 Attack Accuracy:) 99.81499999995019 %                                                                                                   
+TPR: 100.00%, TNR: 99.63%, Advantage: 99.63%                                                   
+TP: 0, FP: 37, FN: 0, TN: 9963                 
+================= MIA with batch size 16 =================                                     
+mia batch size: 16 MIA Positive: 75 MIA Negative: 9925 Attack Accuracy:) 99.62499999995038 %                                                                                                  
+TPR: 100.00%, TNR: 99.25%, Advantage: 99.25%                                                   
+TP: 0, FP: 75, FN: 0, TN: 9925                 
+================= MIA with batch size 32 =================                                     
+mia batch size: 32 MIA Positive: 175 MIA Negative: 9825 Attack Accuracy:) 99.12499999995087 %                                                                                                 
+TPR: 100.00%, TNR: 98.25%, Advantage: 98.25%                                                   
+TP: 0, FP: 175, FN: 0, TN: 9825                                                                
+================= MIA with batch size 64 =================                                     
+mia batch size: 64 MIA Positive: 287 MIA Negative: 9713 Attack Accuracy:) 98.56499999995143 %                                                                                                 
+TPR: 100.00%, TNR: 97.13%, Advantage: 97.13%                                                   
+TP: 0, FP: 287, FN: 0, TN: 9713                                                                
+================= MIA with batch size 128 =================                                    
+mia batch size: 128 MIA Positive: 511 MIA Negative: 9489 Attack Accuracy:) 97.44499999995256 %                                                                                                
+TPR: 100.00%, TNR: 94.89%, Advantage: 94.89%                                                   
+TP: 0, FP: 511, FN: 0, TN: 9489                                                                
+================= MIA with batch size 256 =================                                    
+mia batch size: 256 MIA Positive: 697 MIA Negative: 9303 Attack Accuracy:) 96.51499999995347 %                                                                                                
+TPR: 100.00%, TNR: 93.03%, Advantage: 93.03%                                                   
+TP: 0, FP: 697, FN: 0, TN: 9303                                                                
+================= MIA with batch size 512 =================                                    
+mia batch size: 512 MIA Positive: 911 MIA Negative: 9089 Attack Accuracy:) 95.44499999995455 %                                                                                                
+TPR: 100.00%, TNR: 90.89%, Advantage: 90.89%                                                   
+TP: 0, FP: 911, FN: 0, TN: 9089                                                                
+================= MIA with batch size 1024 =================                                   
+mia batch size: 1024 MIA Positive: 1102 MIA Negative: 8898 Attack Accuracy:) 94.48999999995551 %                                                                                              
+TPR: 100.00%, TNR: 88.98%, Advantage: 88.98%                                                   
+TP: 0, FP: 1102, FN: 0, TN: 8898                                                               

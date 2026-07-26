@@ -1,0 +1,8 @@
+# Ignore dataset contents, but keep the README
+Dataset/*
+!Dataset/readme.md
+output_record/*
+FedPrime
+output_record2/*
+__pycache__/
+*.pyc

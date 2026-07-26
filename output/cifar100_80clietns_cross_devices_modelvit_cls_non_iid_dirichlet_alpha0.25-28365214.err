@@ -1,0 +1,7 @@
+/blue/thai/quan.nguyen1/promptmia/train.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`
+  from tqdm._tqdm import trange
+Traceback (most recent call last):
+  File "/blue/thai/quan.nguyen1/promptmia/train.py", line 249, in <module>
+    raise ValueError(f"Unsupported alpha value for seed selection: {args.alpha}")
+ValueError: Unsupported alpha value for seed selection: 0.25

@@ -1,0 +1,12 @@
+/blue/thai/quan.nguyen1/promptmia/train.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`
+  from tqdm._tqdm import trange
+Traceback (most recent call last):
+  File "/blue/thai/quan.nguyen1/promptmia/train.py", line 244, in <module>
+    data_partitioner.manual_allocating_noniid(args.n_dominated_class, args.dominated_ratio, 1.0)
+  File "/blue/thai/quan.nguyen1/promptmia/data_util/DataDistributer.py", line 82, in manual_allocating_noniid
+    np.array_split(dominated_part, len(dominated_distribution[i]))):
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/blue/thai/quan.nguyen1/anaconda3/envs/ngq/lib/python3.11/site-packages/numpy/lib/_shape_base_impl.py", line 789, in array_split
+    raise ValueError('number sections must be larger than 0.') from None
+ValueError: number sections must be larger than 0.

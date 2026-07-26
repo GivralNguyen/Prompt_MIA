@@ -1,0 +1,54 @@
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 --delta_max 0.05 --gpus 0 --b
+eta 0 --query_model_type vit_cls --load_model ./output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_no
+n_iid_dirichlet_alpha0.5_1_defsparse_mix0p2_spr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.9432.pt --defense sparse --sparse_ratio 0.8    
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0                         
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`                                                                                               
+  from tqdm._tqdm import trange                                         
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as
+ Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)                      
+  entry = pickle.load(f, encoding="latin1")                             
+None                                
+L2P                                 
+normal aggregation                  
+Model loaded from ./output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_non_iid_dirichlet_alpha0.5_1_d
+efsparse_mix0p2_spr0p8_ptb0p0_aug0_sprop1p0_csuniform_round_60_acc_0.9432.pt                                                                    
+
+=============== MIA Attack Loop 1 ===============                       
+================= MIA with batch size 1 =================                                                                                       
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please cons
+ider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csr
+c/utils/tensor_new.cpp:253.)        
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)                                      
+mia batch size: 1 MIA Positive: 50000 MIA Negative: 10000 Attack Accuracy:) 99.99999999994 %                                                    
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%                          
+TP: 50000, FP: 0, FN: 0, TN: 10000                 
+
+================= MIA with batch size 4 =================                                                                               [98/368]
+mia batch size: 4 MIA Positive: 50114 MIA Negative: 9886 Attack Accuracy:) 99.42999999994056 %                                                  
+TPR: 100.00%, TNR: 98.86%, Advantage: 98.86%                            
+TP: 50000, FP: 114, FN: 0, TN: 9886                                     
+================= MIA with batch size 8 =================                                                                                       
+mia batch size: 8 MIA Positive: 50232 MIA Negative: 9768 Attack Accuracy:) 98.83999999994116 %                                                  
+TPR: 100.00%, TNR: 97.68%, Advantage: 97.68%                            
+TP: 50000, FP: 232, FN: 0, TN: 9768                                     
+================= MIA with batch size 16 =================                                                                                      
+mia batch size: 16 MIA Positive: 50496 MIA Negative: 9504 Attack Accuracy:) 97.51999999994247 %                                                 
+TPR: 100.00%, TNR: 95.04%, Advantage: 95.04%                            
+TP: 50000, FP: 496, FN: 0, TN: 9504                                     
+================= MIA with batch size 32 =================                                                                                      
+mia batch size: 32 MIA Positive: 50818 MIA Negative: 9182 Attack Accuracy:) 95.90999999994409 %                                                 
+TPR: 100.00%, TNR: 91.82%, Advantage: 91.82%                            
+TP: 50000, FP: 818, FN: 0, TN: 9182                      
+
+================= MIA with batch size 64 =================                                                                                      
+mia batch size: 64 MIA Positive: 51305 MIA Negative: 8695 Attack Accuracy:) 93.47499999994653 %                                                 
+TPR: 100.00%, TNR: 86.95%, Advantage: 86.95%                            
+TP: 50000, FP: 1305, FN: 0, TN: 8695                                    
+================= MIA with batch size 128 =================                                                                                     
+mia batch size: 128 MIA Positive: 51964 MIA Negative: 8036 Attack Accuracy:) 90.17999999994981 %                                                
+TPR: 100.00%, TNR: 80.36%, Advantage: 80.36%                            
+TP: 50000, FP: 1964, FN: 0, TN: 8036                                    
+================= MIA with batch size 256 =================                                                                                     
+mia batch size: 256 MIA Positive: 52562 MIA Negative: 7438 Attack Accuracy:) 87.1899999999528 %                                                 
+TPR: 100.00%, TNR: 74.38%, Advantage: 74.38%                            
+TP: 50000, FP: 2562, FN: 0, TN: 7438                                   

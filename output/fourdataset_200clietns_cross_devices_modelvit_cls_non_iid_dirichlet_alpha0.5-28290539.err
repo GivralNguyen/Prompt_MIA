@@ -1,0 +1,12 @@
+/blue/thai/quan.nguyen1/promptmia/train.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.0.0
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`
+  from tqdm._tqdm import trange
+  0%|          | 0/60 [00:00<?, ?it/s]  0%|          | 0/60 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "/blue/thai/quan.nguyen1/promptmia/train.py", line 403, in <module>
+    algo.client_train(comm_round=comm_round, epochs=args.local_eps, lr=args.lr, 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/blue/thai/quan.nguyen1/promptmia/Algo/fedavg.py", line 47, in client_train
+    mask = self.class_mask[(self.selected_client_index[i]//20)]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^~
+IndexError: list index out of range

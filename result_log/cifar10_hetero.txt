@@ -1,0 +1,66 @@
+(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.02 -
+-del(tum2) quannm@Suramar:~/code/icml_promptmia$ python mia_stealth.py --n_tokens 4 --dataset cifar10 --delta_min 0.
+02 --delta_max 0.05 --gpus 1 --beta 0 --query_model_type vit_cls  --load_model /home/quannm/code/icml_promptmia/outp
+ut_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietns_cross_devices_modelvit_cls_manual_extreme_heterogenei
+ty_alpha0.5_1_round_119_acc_0.9103.pt --data_distribution manual_extreme_heterogeneity                              
+/home/quannm/code/icml_promptmia/mia_stealth.py:9: TqdmDeprecationWarning: This function will be removed in tqdm==5.
+0.0                                                                                                                 
+Please use `tqdm.std.*` instead of `tqdm._tqdm.*`                                                                   
+  from tqdm._tqdm import trange                                                                                     
+/home/quannm/.local/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(
+): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a sub
+array type? (Deprecated NumPy 2.4)              
+
+array type? (Deprecated NumPy 2.4)                                                                                  
+  entry = pickle.load(f, encoding="latin1")
+None                         
+L2P                          
+normal aggregation           
+Model loaded from /home/quannm/code/icml_promptmia/output_record/saved_model/saved_model_L2P_fedavg_cifar10_80clietn
+s_cross_devices_modelvit_cls_manual_extreme_heterogeneity_alpha0.5_1_round_119_acc_0.9103.pt
+
+=============== MIA Attack Loop 1 ===============
+================= MIA with batch size 1 =================
+/home/quannm/code/icml_promptmia/mia_stealth.py:555: UserWarning: Creating a tensor from a list of numpy.ndarrays is
+ extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting 
+to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:253.)
+  similar_points_tensor = torch.tensor(similar_points, dtype=updated_key.dtype, device=updated_key.device)
+mia batch size: 1 MIA Positive: 0 MIA Negative: 10000 Attack Accuracy:) 99.99999999994999 %
+TPR: 100.00%, TNR: 100.00%, Advantage: 100.00%
+TP: 0, FP: 0, FN: 0, TN: 10000
+================= MIA with batch size 4 =================
+mia batch size: 4 MIA Positive: 18 MIA Negative: 9982 Attack Accuracy:) 99.90999999995009 %
+TPR: 100.00%, TNR: 99.82%, Advantage: 99.82%
+TP: 0, FP: 18, FN: 0, TN: 9982
+================= MIA with batch size 8 =================
+mia batch size: 8 MIA Positive: 39 MIA Negative: 9961 Attack Accuracy:) 99.80499999995018 %
+TPR: 100.00%, TNR: 99.61%, Advantage: 99.61%
+TP: 0, FP: 39, FN: 0, TN: 9961                            
+================= MIA with batch size 16 =================
+mia batch size: 16 MIA Positive: 91 MIA Negative: 9909 Attack Accuracy:) 99.54499999995046 %
+TPR: 100.00%, TNR: 99.09%, Advantage: 99.09%
+TP: 0, FP: 91, FN: 0, TN: 9909                            
+================= MIA with batch size 32 =================
+mia batch size: 32 MIA Positive: 159 MIA Negative: 9841 Attack Accuracy:) 99.2049999999508 %
+TPR: 100.00%, TNR: 98.41%, Advantage: 98.41%
+TP: 0, FP: 159, FN: 0, TN: 9841                           
+================= MIA with batch size 64 =================
+mia batch size: 64 MIA Positive: 264 MIA Negative: 9736 Attack Accuracy:) 98.67999999995132 %
+TPR: 100.00%, TNR: 97.36%, Advantage: 97.36%
+TP: 0, FP: 264, FN: 0, TN: 9736                      
+================= MIA with batch size 128 =================
+mia batch size: 128 MIA Positive: 442 MIA Negative: 9558 Attack Accuracy:) 97.7899999999522 %
+TPR: 100.00%, TNR: 95.58%, Advantage: 95.58%
+TP: 0, FP: 442, FN: 0, TN: 9558                           
+================= MIA with batch size 256 =================
+mia batch size: 256 MIA Positive: 692 MIA Negative: 9308 Attack Accuracy:) 96.53999999995347 %
+TPR: 100.00%, TNR: 93.08%, Advantage: 93.08%
+TP: 0, FP: 692, FN: 0, TN: 9308                         
+================= MIA with batch size 512 =================
+mia batch size: 512 MIA Positive: 986 MIA Negative: 9014 Attack Accuracy:) 95.06999999995493 %
+TPR: 100.00%, TNR: 90.14%, Advantage: 90.14%
+TP: 0, FP: 986, FN: 0, TN: 9014                           
+================= MIA with batch size 1024 =================
+mia batch size: 1024 MIA Positive: 1458 MIA Negative: 8542 Attack Accuracy:) 92.70999999995728 %
+TPR: 100.00%, TNR: 85.42%, Advantage: 85.42%
+TP: 0, FP: 1458, FN: 0, TN: 8542            
