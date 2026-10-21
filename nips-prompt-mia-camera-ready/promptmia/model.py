@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
+from promptmia.backbones import vit_cls_query
 
 
 class PromptPool(nn.Module):
@@ -51,9 +52,7 @@ class L2PViT(nn.Module):
     @torch.no_grad()
     def query(self, x):
         """q(x): CLS output of the frozen, prompt-free ViT."""
-        tok = self.vit._process_input(x)
-        tok = torch.cat([self.vit.class_token.expand(tok.size(0), -1, -1), tok], dim=1)
-        return self.vit.encoder(tok)[:, 0]
+        return vit_cls_query(self.vit, x)
 
     def forward(self, x, q=None):
         """Returns (logits, key_loss, selected indices). Pass a precomputed q(x) to skip the query pass."""

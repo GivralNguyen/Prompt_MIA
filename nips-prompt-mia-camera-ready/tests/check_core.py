@@ -46,13 +46,31 @@ check('forward with cached query == forward without', torch.equal(a, b) and torc
 global_state = model.trainable_state()
 model.load_trainable_state(global_state)
 local_train(model, cache, model.query(x), np.arange(8), epochs=1, batch_size=4, lr=1e-2, lam=0.5,
-            gen=torch.Generator().manual_seed(0))
+            gen=torch.Generator().manual_seed(0), key_lr=1e-2)
 client_a = model.trainable_state()
 model.load_trainable_state(global_state)
 client_b = model.trainable_state()
 check('local training changed the client', any(not torch.equal(client_a[n], global_state[n]) for n in global_state))
 check('global state untouched by client training', all(torch.equal(client_b[n], global_state[n]) for n in global_state))
 check('client states never alias each other', all(client_a[n].data_ptr() != client_b[n].data_ptr() for n in global_state))
+
+# 4b. the attack's observation channel: prompt/key rows never selected during local training come back unchanged,
+#     rows that were selected come back changed
+model.load_trainable_state(global_state)
+seen, select = set(), model.pool.select
+def recording_select(q):
+    idx, loss = select(q)
+    seen.update(idx.flatten().tolist())
+    return idx, loss
+model.pool.select = recording_select
+local_train(model, cache, model.query(x), np.arange(8), epochs=1, batch_size=4, lr=1e-2, lam=0.5,
+            gen=torch.Generator().manual_seed(0), key_lr=1e-2)
+model.pool.select = select
+after = model.trainable_state()
+changed = {i for i in range(global_state['pool.prompt'].size(0))
+           if not torch.equal(after['pool.prompt'][i], global_state['pool.prompt'][i])
+           or not torch.equal(after['pool.key'][i], global_state['pool.key'][i])}
+check(f'only selected rows change (selected {sorted(seen)}, changed {sorted(changed)})', changed == seen)
 
 # 5. Algorithm 1 hits the requested similarity and norm
 gen = torch.Generator().manual_seed(0)

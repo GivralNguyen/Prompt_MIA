@@ -20,6 +20,8 @@ p.add_argument('--local_epochs', type=int, default=5)
 p.add_argument('--batch_size', type=int, default=64)
 p.add_argument('--lr', type=float, default=1e-4)
 p.add_argument('--lam', type=float, default=0.5, help='lambda in Eq. 2')
+p.add_argument('--key_lr', type=float, default=1e-3,
+               help='learning rate of the keys; 1e-3 makes keys converge to one per query cluster by round 20 on every seed')
 p.add_argument('--alpha', type=float, default=0.5, help='Dirichlet concentration')
 p.add_argument('--M', type=int, default=20)
 p.add_argument('--N', type=int, default=4)
@@ -59,6 +61,6 @@ def on_round(r, state, acc):
         torch.save({n: v.cpu() for n, v in state.items()}, os.path.join(out, f'ckpt_round{r}.pt'))
 
 cfg = dict(rounds=args.rounds, clients_per_round=args.clients_per_round, local_epochs=args.local_epochs,
-           batch_size=args.batch_size, lr=args.lr, lam=args.lam, seed=args.seed)
+           batch_size=args.batch_size, lr=args.lr, lam=args.lam, seed=args.seed, key_lr=args.key_lr)
 run_fedavg(model, train_cache, train_q, test_cache, test_q, clients, cfg, on_round)
 print(f'done in {(time.time()-t0)/60:.1f} min, final acc {accs[args.rounds]:.4f}')

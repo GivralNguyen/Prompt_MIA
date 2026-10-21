@@ -29,11 +29,12 @@ p.add_argument('--n_queries', type=int, default=200)
 p.add_argument('--delta_min', type=float, default=0.02)
 p.add_argument('--delta', type=float, default=0.05)
 p.add_argument('--seed', type=int, default=0)
+p.add_argument('--out', default=None, help='output folder (default: <run>/figures)')
 args = p.parse_args()
 
 cfg = json.load(open(os.path.join(args.run, 'config.json')))
 keys_by_round = torch.load(os.path.join(args.run, 'keys.pt'))
-out = os.path.join(args.run, 'figures')
+out = args.out or os.path.join(args.run, 'figures')
 os.makedirs(out, exist_ok=True)
 dev = 'cuda'
 N = cfg['N']

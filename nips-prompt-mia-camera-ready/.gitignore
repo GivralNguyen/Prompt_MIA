@@ -1,3 +1,4 @@
 runs/
 logs/
+cache/
 __pycache__/

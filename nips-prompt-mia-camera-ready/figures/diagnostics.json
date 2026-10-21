@@ -1,0 +1,74 @@
+{
+ "fig2": {
+  "target_index": 0,
+  "injected_slots": [
+   15,
+   16,
+   13,
+   7
+  ],
+  "eq7_interval": [
+   0.36038525494026696,
+   0.41038525494026695
+  ],
+  "adv_similarity_to_qT": [
+   0.40888790503059463,
+   0.3957762481602564,
+   0.3833544020966396,
+   0.40642263914636517
+  ],
+  "max_benign_similarity_to_qT": 0.34038525494026695,
+  "target_selects_exactly_adv_keys": true,
+  "cos_adv_adv_mean": 0.7854441556021129,
+  "cos_benign_benign_mean": 0.5956584401522654,
+  "cos_benign_benign_max": 0.999999989012994
+ },
+ "fig3": {
+  "round": 60,
+  "n_keys": 20,
+  "distinct_keys_cos>0.99": 5,
+  "key_cos_offdiag_max": 0.999999989012994,
+  "key_cos_offdiag_mean": 0.5588539592685106,
+  "queries_per_nearest_key_768d": [
+   21,
+   32,
+   1,
+   14,
+   0,
+   4,
+   0,
+   11,
+   9,
+   8,
+   8,
+   15,
+   2,
+   0,
+   19,
+   10,
+   8,
+   12,
+   8,
+   18
+  ],
+  "keys_never_nearest_768d": 3
+ },
+ "fig18": {
+  "0": {
+   "distinct_keys_cos>0.99": 20,
+   "key_cos_offdiag_max": 0.07711385190486908
+  },
+  "1": {
+   "distinct_keys_cos>0.99": 20,
+   "key_cos_offdiag_max": 0.8772255182266235
+  },
+  "20": {
+   "distinct_keys_cos>0.99": 5,
+   "key_cos_offdiag_max": 1.000000238418579
+  },
+  "60": {
+   "distinct_keys_cos>0.99": 5,
+   "key_cos_offdiag_max": 1.0000001192092896
+  }
+ }
+}
